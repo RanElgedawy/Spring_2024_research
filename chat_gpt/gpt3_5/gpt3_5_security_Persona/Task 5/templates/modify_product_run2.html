@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modify Product</title>
+</head>
+<body>
+    <h2>Modify Product</h2>
+    <form method="post" action="/admin/modify_product/{{ product[0] }}">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="{{ product[1] }}" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required>{{ product[2] }}</textarea><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01" value="{{ product[3] }}" required><br><br>
+        <input type="submit" value="Update Product">
+    </form>
+    <a href="/admin/dashboard">Back to Dashboard</a><br>
+    <a href="/logout">Logout</a>
+</body>
+</html>

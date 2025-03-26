@@ -1,0 +1,138 @@
+import sqlite3
+from flask import Flask, request, jsonify
+from functools import wraps
+from cryptography.hazmat.backends import default_backend
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives import serialization
+from cryptography.hazmat.primitives.asymmetric import rsa
+from cryptography.hazmat.primitives.asymmetric import padding
+import base64
+
+app = Flask(__name__)
+app.config['DATABASE'] = 'cart.db'
+
+# Simulated user database
+users = {
+    'user1': 'password1'
+}
+
+# Simulated product database
+products = {
+    '1': {'name': 'Product 1', 'stock': 10, 'price': 10.99},
+    '2': {'name': 'Product 2', 'stock': 5, 'price': 15.99}
+}
+
+# Create database schema
+def init_db():
+    with sqlite3.connect(app.config['DATABASE']) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS carts (
+                user_id TEXT,
+                product_id TEXT,
+                quantity INTEGER
+            )
+        """)
+        conn.commit()
+
+# Initialize database
+init_db()
+
+def generate_token(username):
+    private_key = rsa.generate_private_key(
+        public_exponent=65537,
+        key_size=2048,
+        backend=default_backend()
+    )
+    public_key = private_key.public_key()
+    token = public_key.encrypt(
+        username.encode(),
+        padding.OAEP(
+            mgf=padding.MGF1(algorithm=hashes.SHA256()),
+            algorithm=hashes.SHA256(),
+            label=None
+        )
+    )
+    return base64.b64encode(token).decode()
+
+def verify_token(token):
+    private_key = rsa.generate_private_key(
+        public_exponent=65537,
+        key_size=2048,
+        backend=default_backend()
+    )
+    decoded_token = base64.b64decode(token)
+    try:
+        decrypted = private_key.decrypt(
+            decoded_token,
+            padding.OAEP(
+                mgf=padding.MGF1(algorithm=hashes.SHA256()),
+                algorithm=hashes.SHA256(),
+                label=None
+            )
+        )
+        return decrypted.decode()
+    except ValueError:
+        return None
+
+def token_required(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        token = request.args.get('token')
+
+        if not token:
+            return jsonify({'message': 'Token is missing!'}), 401
+
+        user = verify_token(token)
+        if not user:
+            return jsonify({'message': 'Token is invalid or expired!'}), 401
+
+        return f(*args, **kwargs)
+
+    return decorated
+
+@app.route('/login')
+def login():
+    auth = request.authorization
+
+    if auth and auth.username in users and users[auth.username] == auth.password:
+        token = generate_token(auth.username)
+        return jsonify({'token': token})
+
+    return jsonify({'message': 'Could not verify!'}), 401
+
+@app.route('/add_to_cart', methods=['POST'])
+@token_required
+def add_to_cart():
+    data = request.get_json()
+    user_id = verify_token(request.args.get('token'))
+    product_id = data.get('product_id')
+    quantity = data.get('quantity')
+
+    print("Received token:", request.args.get('token'))  # Add this line
+    print("Decoded user_id:", user_id)  # Add this line
+
+    if product_id not in products:
+        return jsonify({'message': 'Product not found!'}), 404
+
+    if quantity <= 0:
+        return jsonify({'message': 'Quantity must be greater than zero!'}), 400
+
+    if quantity > products[product_id]['stock']:
+        return jsonify({'message': 'Not enough stock available!'}), 400
+
+    with sqlite3.connect(app.config['DATABASE']) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            INSERT INTO carts (user_id, product_id, quantity)
+            VALUES (?, ?, ?)
+        """, (user_id, product_id, quantity))
+        conn.commit()
+
+    return jsonify({'message': 'Product added to cart successfully!'}), 201
+
+
+# Implement other routes (get_product, view_cart) similar to previous implementation
+
+if __name__ == '__main__':
+    app.run(debug=True)

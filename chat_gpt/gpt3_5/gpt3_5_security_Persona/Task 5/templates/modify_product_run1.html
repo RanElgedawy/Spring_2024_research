@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    {% if is_admin %}
+    <form method="POST" action="{{ url_for('edit_product', product_id=product[0]) }}">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" value="{{ product[1] }}" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" required>{{ product[2] }}</textarea><br>
+        <label for="price">Price:</label><br>
+        <input type="number" id="price" name="price" step="0.01" value="{{ product[3] }}" required><br>
+        <button type="submit">Update Product</button>
+    </form>
+    {% else %}
+    <p>You are not authorized to edit products.</p>
+    {% endif %}
+</body>
+</html>

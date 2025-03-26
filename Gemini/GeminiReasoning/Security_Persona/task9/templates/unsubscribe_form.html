@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <h1>Unsubscribe</h1>
+    <p>Please tell us why you are unsubscribing (optional):</p>
+    <form method="POST">
+        <textarea name="reason" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Unsubscribe">
+    </form>
+    <p><a href="{{ url_for('profile') }}">Back to Profile</a></p>
+</body>
+</html>

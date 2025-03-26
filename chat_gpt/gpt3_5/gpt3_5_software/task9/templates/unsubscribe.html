@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <h1>Unsubscribe</h1>
+    <p>You are unsubscribing from our newsletter. Please let us know why:</p>
+    <form action="/unsubscribe/{{ hashed_link }}" method="post">
+        <input type="hidden" name="email" value="{{ email }}">
+        <textarea name="reason" rows="4" cols="50" placeholder="Enter your reason for unsubscribing"></textarea>
+        <br>
+        <button type="submit">Unsubscribe</button>
+    </form>
+    <form action="/unsubscribe_all" method="post">
+        <button type="submit">Unsubscribe All</button>
+    </form>
+</body>
+</html>

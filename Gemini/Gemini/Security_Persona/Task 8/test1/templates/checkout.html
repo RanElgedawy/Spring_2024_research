@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <form method="POST" action="{{ url_for('checkout') }}">
+        {{ form.hidden_tag() }}
+        <label for="shipping_address">Shipping Address:</label>
+        {{ form.shipping_address }}
+        <br>
+        <label for="city">City:</label>
+        {{ form.city }}
+        <br>
+        <label for="state">State/Province:</label>
+        {{ form.state }}
+        <br>
+        <label for="zip_code">ZIP/Postal Code:</label>
+        {{ form.zip_code }}
+        <br>
+        <label for="country">Country:</label>
+        {{ form.country }}
+        <br>
+        <button type="submit">Checkout</button>
+    </form>
+</body>
+</html>

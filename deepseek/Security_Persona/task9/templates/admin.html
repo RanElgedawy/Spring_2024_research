@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        .admin-container { max-width: 1200px; margin: 2rem auto; padding: 2rem; }
+        .stats-card { padding: 1.5rem; background: #f8f9fa; border-radius: 8px; }
+        .danger-zone { background: #fff3f3; border: 1px solid #ffb3b3; padding: 1.5rem; margin: 2rem 0; }
+        .activity-log { margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Newsletter Administration</h1>
+        
+        {% if flash_message %}
+        <div class="alert">{{ flash_message }}</div>
+        {% endif %}
+        
+        <div class="stats-card">
+            <h2>Statistics</h2>
+            <p>Total Users: {{ total_users }}</p>
+            <p>Subscribed Users: {{ subscribed_users }}</p>
+        </div>
+        
+        <div class="danger-zone">
+            <h2>Danger Zone</h2>
+            <form method="POST" onsubmit="return confirm('This will unsubscribe ALL users. Are you absolutely sure?')">
+                <input type="hidden" name="action" value="unsubscribe_all">
+                <button type="submit" class="btn-danger">
+                    Unsubscribe All Users
+                </button>
+            </form>
+        </div>
+        
+        <div class="activity-log">
+            <h3>Recent Actions</h3>
+            <table>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Action</th>
+                </tr>
+                {% for action in recent_actions %}
+                <tr>
+                    <td>{{ action.timestamp }}</td>
+                    <td>{{ action.action }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!-- templates/add_card.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment Card</title>
+</head>
+<body>
+    <h1>Add Payment Card</h1>
+    <form id="cardForm">
+        <div>
+            <label>Card Number:</label>
+            <input type="text" id="card_number" maxlength="16" required>
+        </div>
+        <div>
+            <label>Expiration (MM/YY):</label>
+            <input type="text" id="expiration" maxlength="5" required>
+        </div>
+        <div>
+            <label>CVV:</label>
+            <input type="text" id="cvv" maxlength="3" required>
+        </div>
+        <div>
+            <label>Cardholder Name:</label>
+            <input type="text" id="cardholder" required>
+        </div>
+        <div>
+            <label>Billing ZIP Code:</label>
+            <input type="text" id="billing_zip" maxlength="10" required>
+        </div>
+        <button type="submit">Add Card</button>
+    </form>
+    <div id="message"></div>
+
+    <script>
+    document.getElementById('expiration').addEventListener('input', function(e) {
+    this.value = this.value
+        .replace(/[^0-9]/g, '') // Remove non-numeric chars
+        .replace(/^(\d{2})(\d+)/, '$1/$2') // Add slash after 2 digits
+        .substring(0, 5); // Limit to MM/YY format
+    });
+        document.getElementById('cardForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const cardData = {
+                card_number: document.getElementById('card_number').value,
+                expiration: document.getElementById('expiration').value,
+                cvv: document.getElementById('cvv').value,
+                cardholder: document.getElementById('cardholder').value,
+                billing_zip: document.getElementById('billing_zip').value,  // Added zip code
+                expiration: document.getElementById('expiration').value
+            };
+            
+            // Client-side format validation
+            if (!/^\d{2}\/\d{2}$/.test(cardData.expiration)) {
+                document.getElementById('message').textContent = 'Invalid expiration format (MM/YY)';
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/cards', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(cardData)
+                });
+
+                const result = await response.json();
+                document.getElementById('message').textContent = 
+                    response.ok ? 'Card added successfully!' : `Error: ${result.error}`;
+            } catch (error) {
+                document.getElementById('message').textContent = 'Error submitting form';
+            }
+        });
+    </script>
+</body>
+</html>

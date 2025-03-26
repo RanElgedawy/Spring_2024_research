@@ -1,8 +1,0 @@
-<form method="POST" action="/admin/add">
-    {{ csrf_token() }}
-    <input type="text" name="name" placeholder="Product Name" required>
-    <textarea name="description" placeholder="Product Description" required></textarea>
-    <input type="number" step="0.01" name="price" placeholder="Price" required>
-    <button type="submit">Add Product</button>
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-</form>

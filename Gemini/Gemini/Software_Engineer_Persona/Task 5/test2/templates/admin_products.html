@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.price }}</td>
+                <td>
+                    <td>
+                        <a href="/admin/products/edit/{{ product.id }}">Edit</a>
+                    </td>                    <td>
+                        <form method="POST" action="/admin/products/delete/{{ product.id }}">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        <a href="/admin/products/add">Add Product</a>
+    </table>
+</body>
+</html>

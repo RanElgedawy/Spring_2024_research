@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Dashboard</h1>
+    <p>Logged in as: {{ user.email }}</p>
+    <p>Subscription status: {{ 'Subscribed' if user.subscribed else 'Unsubscribed' }}</p>
+    {% if user.subscribed %}
+        <a href="{{ url_for('unsubscribe') }}">Unsubscribe</a>
+    {% endif %}
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

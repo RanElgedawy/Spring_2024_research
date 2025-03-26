@@ -1,0 +1,25 @@
+<!-- templates/view_reviews.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reviews</title>
+</head>
+<body>
+    <h1>Product Reviews</h1>
+    {% if reviews %}
+        <ul>
+            {% for review in reviews %}
+                <li>
+                    Rating: {{ review.rating }}<br>
+                    Review: {{ review.review_text }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No reviews found for this product.</p>
+    {% endif %}
+</body>
+</html>

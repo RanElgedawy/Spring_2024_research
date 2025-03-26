@@ -1,0 +1,17 @@
+<!-- templates/product.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Reviews</title>
+</head>
+<body>
+    <h1>Product Reviews</h1>
+    {% for review in reviews %}
+    <div style="border: 1px solid #ccc; margin: 10px; padding: 10px;">
+        <p>Rating: {{ review.rating }}/5</p>
+        <p>{{ review.review_text }}</p>
+        <small>Submitted by user {{ review.user_id }}</small>
+    </div>
+    {% endfor %}
+</body>
+</html>

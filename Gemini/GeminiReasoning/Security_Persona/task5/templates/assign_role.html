@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Assign Role</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assign Role to User</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.user_id.label }} {{ form.user_id(class="form-control") }}
+                {% if form.user_id.errors %}
+                    <ul class="errors">
+                        {% for error in form.user_id.errors %}
+                            <li class="text-danger">{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.role_id.label }} {{ form.role_id(class="form-control") }}
+                {% if form.role_id.errors %}
+                    <ul class="errors">
+                        {% for error in form.role_id.errors %}
+                            <li class="text-danger">{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+        <p><a href="{{ url_for('manage_rbac') }}">Back to Role Management</a> | <a href="{{ url_for('index') }}">Home</a></p>
+    </div>
+</body>
+</html>

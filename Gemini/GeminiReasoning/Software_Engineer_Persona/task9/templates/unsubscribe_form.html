@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <h1>Unsubscribe from Newsletter</h1>
+    <p>Are you sure you want to unsubscribe, {{ user['email'] }}?</p>
+    <form method="POST" action="/unsubscribe">
+        <div>
+            <label for="reason">Optional Reason for Unsubscription:</label><br>
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+        </div>
+        <button type="submit">Unsubscribe</button>
+        <p><a href="{{ url_for('index') }}">Go back to Dashboard</a></p>
+    </form>
+</body>
+</html>

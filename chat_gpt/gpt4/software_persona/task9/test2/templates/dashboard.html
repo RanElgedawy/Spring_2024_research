@@ -1,0 +1,12 @@
+<h1>Dashboard</h1>
+<p>Welcome, {{ user.email }}!</p>
+{% if newsletter.subscribed %}
+    <p>You are subscribed to the newsletter.</p>
+    <a href="{{ unsubscribe_link }}">Unsubscribe</a>
+{% else %}
+    <p>You are not subscribed to the newsletter.</p>
+{% endif %}
+<form method="POST" action="{{ url_for('unsubscribe_all') }}">
+    <input type="submit" value="Unsubscribe All">
+</form>
+<a href="{{ url_for('logout') }}">Logout</a>

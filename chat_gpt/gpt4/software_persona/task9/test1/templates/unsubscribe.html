@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <h2>Unsubscribe from Newsletter</h2>
+    <form action="{{ url_for('unsubscribe') }}" method="post">
+        <label for="reason">Reason for unsubscribing (optional):</label><br>
+        <textarea id="reason" name="reason"></textarea><br>
+        <button type="submit">Unsubscribe</button>
+    </form>
+    <form action="{{ url_for('unsubscribe_all_users') }}" method="post">
+        <button type="submit">Unsubscribe All Users</button>
+    </form>
+    <br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

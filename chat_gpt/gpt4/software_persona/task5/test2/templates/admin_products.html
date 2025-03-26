@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Products</title>
+</head>
+<body>
+    <h1>Product Management</h1>
+    <a href="{{ url_for('add_product') }}">Add Product</a>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }} - ${{ product.price }}
+                <a href="{{ url_for('edit_product', id=product.id) }}">Edit</a>
+                <form action="{{ url_for('delete_product', id=product.id) }}" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

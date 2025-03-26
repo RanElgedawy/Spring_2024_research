@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Unsubscribe from Newsletter</h1>
+    <form method="POST">
+        {{ form.reason }}
+        <button type="submit">Confirm Unsubscription</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}">Cancel</a>
+</body>
+</html>

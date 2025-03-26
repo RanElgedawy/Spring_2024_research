@@ -1,0 +1,26 @@
+import unittest
+import requests
+
+class TestAddPaymentCard(unittest.TestCase):
+    def test_add_card(self):
+        # Test data
+        user_id = 1
+        card_data = {
+            'user_id': user_id,
+            'card_number': '1234567890123456',
+            'card_holder': 'John Doe',
+            'expiration_date': '12/22',
+            'cvv': '123'
+        }
+
+        # Send POST request to add a card
+        response = requests.post('http://127.0.0.1:5000/add_card', json=card_data)
+
+        # Check if the response status code is 200
+        self.assertEqual(response.status_code, 200)
+
+        # Check if the response message indicates success
+        self.assertEqual(response.json()['message'], 'Payment card added successfully')
+
+if __name__ == '__main__':
+    unittest.main()

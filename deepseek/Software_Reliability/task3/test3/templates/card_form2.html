@@ -1,0 +1,54 @@
+<!-- templates/card_form.html (Frontend) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment Card</title>
+</head>
+<body>
+    <h1>Add Payment Card</h1>
+    <form id="cardForm">
+        <div>
+            <label>Card Number:</label>
+            <input type="text" id="cardNumber" maxlength="16" required>
+        </div>
+        <div>
+            <label>Expiry Date (MM/YY):</label>
+            <input type="text" id="expiryDate" maxlength="5" required>
+        </div>
+        <div>
+            <label>CVV:</label>
+            <input type="text" id="cvv" maxlength="3" required>
+        </div>
+        <button type="submit">Add Card</button>
+    </form>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('cardForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const cardData = {
+                card_number: document.getElementById('cardNumber').value,
+                expiry_date: document.getElementById('expiryDate').value,
+                cvv: document.getElementById('cvv').value
+            };
+
+            try {
+                const response = await fetch('/add_card', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(cardData)
+                });
+
+                const result = await response.json();
+                document.getElementById('message').textContent = 
+                    response.ok ? 'Card added successfully!' : `Error: ${result.error}`;
+            } catch (error) {
+                document.getElementById('message').textContent = `Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

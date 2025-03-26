@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Review</title>
+</head>
+<body>
+    <h1>Review Product: {{ product.name }}</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id" required><br><br>
+        
+        <label for="review_text">Review:</label><br>
+        <textarea id="review_text" name="review_text" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="score">Rating (1-5):</label>
+        <input type="number" id="score" name="score" min="1" max="5" required><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+</body>
+</html>

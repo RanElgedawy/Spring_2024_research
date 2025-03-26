@@ -1,0 +1,18 @@
+<!-- templates/cards.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stored Cards</title>
+</head>
+<body>
+    <h1>Stored Cards (TEST ONLY)</h1>
+    <ul>
+        {% for card in cards %}
+            <li>
+                {{ card.card_number }} - 
+                {{ card.expiration_month }}/{{ card.expiration_year }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

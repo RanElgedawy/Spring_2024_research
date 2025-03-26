@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment Card</title>
+    <style>
+        .container { max-width: 500px; margin: 20px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input { width: 100%; padding: 8px; }
+        button { padding: 10px 20px; }
+        .message { margin-top: 15px; padding: 10px; display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Payment Card</h2>
+        <form id="cardForm">
+            <div class="form-group">
+                <label>Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="4111111111111111" maxlength="16">
+            </div>
+            <div class="form-group">
+                <label>Expiry Date (MM/YY):</label>
+                <input type="text" id="expiryDate" placeholder="12/25" maxlength="5">
+            </div>
+            <div class="form-group">
+                <label>CVV:</label>
+                <input type="text" id="cvv" placeholder="123" maxlength="3">
+            </div>
+            <div class="form-group">
+                <label>Cardholder Name:</label>
+                <input type="text" id="cardholderName" placeholder="John Doe">
+            </div>
+            <button type="submit">Add Card</button>
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('cardForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const cardData = {
+                card_number: document.getElementById('cardNumber').value,
+                expiry_date: document.getElementById('expiryDate').value,
+                cvv: document.getElementById('cvv').value,
+                cardholder_name: document.getElementById('cardholderName').value
+            };
+
+            try {
+                const response = await fetch('/add-card', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(cardData)
+                });
+
+                const result = await response.json();
+                const message = document.getElementById('message');
+                
+                if (response.ok) {
+                    message.style.display = 'block';
+                    message.style.backgroundColor = '#dff0d8';
+                    message.innerHTML = `Card added successfully!<br>
+                        Last 4 digits: ${result.card_number.slice(-4)}<br>
+                        Expires: ${result.expiry_date}`;
+                } else {
+                    message.style.display = 'block';
+                    message.style.backgroundColor = '#f8d7da';
+                    message.textContent = `Error: ${result.error}`;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment Card</title>
+</head>
+<body>
+    <h1>Add New Payment Card</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <div>
+            <label for="cardholder_name">Cardholder Name:</label>
+            <input type="text" id="cardholder_name" name="cardholder_name" required><br><br>
+        </div>
+        <div>
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" required><br><br>
+        </div>
+        <div>
+            <label for="expiry_month">Expiry Month (MM):</label>
+            <input type="number" id="expiry_month" name="expiry_month" min="1" max="12" required><br><br>
+        </div>
+        <div>
+            <label for="expiry_year">Expiry Year (YYYY):</label>
+            <input type="number" id="expiry_year" name="expiry_year" min="{{ 'now().year' }}" required><br><br>
+        </div>
+        <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br><br>
+        </div>
+        <div>
+            <label for="billing_zip">Billing Zip Code:</label>
+            <input type="text" id="billing_zip" name="billing_zip" required><br><br>
+        </div>
+        <button type="submit">Add Card</button>
+    </form>
+    <p><a href="{{ url_for('view_cards') }}">View My Cards</a></p>
+</body>
+</html>

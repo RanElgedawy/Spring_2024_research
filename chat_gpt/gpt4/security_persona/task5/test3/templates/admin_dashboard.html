@@ -1,0 +1,24 @@
+<h1>Admin Dashboard</h1>
+<a href="/admin/add">Add New Product</a>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Actions</th>
+    </tr>
+    {% for product in products %}
+    <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+            <a href="/admin/edit/{{ product.id }}">Edit</a>
+            <form method="POST" action="/admin/delete/{{ product.id }}" style="display:inline;">
+                <button type="submit">Delete</button>
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

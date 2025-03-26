@@ -1,0 +1,6876 @@
+# Task 1 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 95:0 login - A (5)
+    F 79:0 register - A (3)
+    C 44:0 RegistrationForm - A (3)
+    F 23:0 init_db - A (2)
+    C 34:0 User - A (2)
+    M 51:4 RegistrationForm.validate_username - A (2)
+    M 56:4 RegistrationForm.validate_email - A (2)
+    F 30:0 before_request - A (1)
+    F 68:0 load_user - A (1)
+    F 75:0 home - A (1)
+    F 110:0 logout - A (1)
+    M 40:4 User.__repr__ - A (1)
+    C 62:0 LoginForm - A (1)
+
+13 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.9230769230769231)
+#### Maintainability Index score (multi-line comments)
+task.py - A (65.89)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (65.89)
+#### raw metrics
+task.py
+    LOC: 116
+    LLOC: 90
+    SLOC: 90
+    Comments: 12       
+    Single comments: 10
+    Multi: 0
+    Blank: 16
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+** Total **
+    LOC: 116
+    LLOC: 90
+    SLOC: 90
+    Comments: 12
+    Single comments: 10
+    Multi: 0
+    Blank: 16
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 5
+    N1: 3
+    N2: 5
+    vocabulary: 8
+    length: 8
+    calculated_length: 16.36452797660028
+    volume: 24.0
+    difficulty: 1.5
+    effort: 36.0
+    time: 2.0
+    bugs: 0.008
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    before_request:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    __repr__:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    validate_username:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    validate_email:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    load_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    home:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    register:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    login:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 50:0 login - B (6)
+    F 19:0 register - A (5)
+    C 10:0 User - A (2)
+    M 15:4 User.__repr__ - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (63.67)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (63.67)
+#### raw metrics
+task.py
+    LOC: 76
+    LLOC: 47
+    SLOC: 59
+    Comments: 5
+    Single comments: 3
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 8%
+        (C + M % L): 7%
+** Total **
+    LOC: 76
+    LLOC: 47
+    SLOC: 59
+    Comments: 5
+    Single comments: 3
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 8%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 18
+    N1: 11
+    N2: 18
+    vocabulary: 23
+    length: 29
+    calculated_length: 86.66829050039843
+    volume: 131.18329672565338
+    difficulty: 2.5
+    effort: 327.95824181413343
+    time: 18.219902323007414
+    bugs: 0.04372776557521779
+#### Halstead complexity metrics (function)
+task.py:
+    __repr__:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    register:
+        h1: 3
+        h2: 6
+        N1: 4
+        N2: 6
+        vocabulary: 9
+        length: 10
+        calculated_length: 20.264662506490406
+        volume: 31.699250014423125
+        difficulty: 1.5
+        effort: 47.548875021634686
+        time: 2.6416041678685938
+        bugs: 0.010566416671474375
+    login:
+        h1: 4
+        h2: 8
+        N1: 5
+        N2: 8
+        vocabulary: 12
+        length: 13
+        calculated_length: 32.0
+        volume: 46.604512509375034
+        difficulty: 2.0
+        effort: 93.20902501875007
+        time: 5.178279167708337
+        bugs: 0.015534837503125011
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 19:0 register_user - A (3)
+    F 42:0 login_user - A (3)
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (76.37)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (76.37)
+#### raw metrics
+task.py
+    LOC: 63
+    LLOC: 38
+    SLOC: 43
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 14%
+        (C + M % L): 10%
+** Total **
+    LOC: 63
+    LLOC: 38
+    SLOC: 43
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 14%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 4
+    N1: 3
+    N2: 4
+    vocabulary: 6
+    length: 7
+    calculated_length: 10.0
+    volume: 18.094737505048094
+    difficulty: 1.0
+    effort: 18.094737505048094
+    time: 1.0052631947248942
+    bugs: 0.006031579168349364
+#### Halstead complexity metrics (function)
+task.py:
+    register_user:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    login_user:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 57:0 add_card - B (8)
+    F 40:0 validate_expiration_date - A (3)
+    F 87:0 get_cards - A (2)
+    F 17:0 init_db - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (59.27)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (59.27)
+#### raw metrics
+task.py
+    LOC: 110
+    LLOC: 69
+    SLOC: 84
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 7%
+        (C + M % L): 5%
+** Total **
+    LOC: 110
+    LLOC: 69
+    SLOC: 84
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 7%
+        (C + M % L): 5%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 6
+    h2: 17
+    N1: 8
+    N2: 17
+    vocabulary: 23
+    length: 25
+    calculated_length: 84.99664330558272
+    volume: 113.08904890142533
+    difficulty: 3.0
+    effort: 339.267146704276
+    time: 18.848174816904223
+    bugs: 0.03769634963380844
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    validate_expiration_date:
+        h1: 4
+        h2: 7
+        N1: 4
+        N2: 7
+        vocabulary: 11
+        length: 11
+        calculated_length: 27.651484454403228
+        volume: 38.053747805010275
+        difficulty: 2.0
+        effort: 76.10749561002055
+        time: 4.228194200556697
+        bugs: 0.012684582601670092
+    add_card:
+        h1: 2
+        h2: 8
+        N1: 3
+        N2: 8
+        vocabulary: 10
+        length: 11
+        calculated_length: 26.0
+        volume: 36.541209043760986
+        difficulty: 1.0
+        effort: 36.541209043760986
+        time: 2.0300671690978325
+        bugs: 0.012180403014586996
+    get_cards:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 49:0 login - A (5)
+    F 27:0 register - A (4)
+    F 13:0 init_db - A (1)
+
+3 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.3333333333333335)      
+#### Maintainability Index score (multi-line comments)
+task.py - A (65.88)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (65.88)
+#### raw metrics
+task.py
+    LOC: 69
+    LLOC: 51
+    SLOC: 51
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 7%
+** Total **
+    LOC: 69
+    LLOC: 51
+    SLOC: 51
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 12
+    N1: 8
+    N2: 12
+    vocabulary: 16
+    length: 20
+    calculated_length: 51.01955000865388
+    volume: 80.0
+    difficulty: 2.0
+    effort: 160.0
+    time: 8.88888888888889
+    bugs: 0.02666666666666667
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    register:
+        h1: 2
+        h2: 4
+        N1: 3
+        N2: 4
+        vocabulary: 6
+        length: 7
+        calculated_length: 10.0
+        volume: 18.094737505048094
+        difficulty: 1.0
+        effort: 18.094737505048094
+        time: 1.0052631947248942
+        bugs: 0.006031579168349364
+    login:
+        h1: 3
+        h2: 6
+        N1: 4
+        N2: 6
+        vocabulary: 9
+        length: 10
+        calculated_length: 20.264662506490406
+        volume: 31.699250014423125
+        difficulty: 1.5
+        effort: 47.548875021634686
+        time: 2.6416041678685938
+        bugs: 0.010566416671474375
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 17:0 validate_registration_form - B (6)
+    F 61:0 login - B (6)
+    F 28:0 validate_login_form - A (5)
+    F 39:0 register - A (4)
+    F 79:0 dashboard - A (1)
+    F 83:0 index - A (1)
+    C 11:0 User - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.4285714285714284)
+#### Maintainability Index score (multi-line comments)
+task.py - A (58.32)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (58.32)
+#### raw metrics
+task.py
+    LOC: 91
+    LLOC: 70
+    SLOC: 73
+    Comments: 7
+    Single comments: 5
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 10%
+        (C + M % L): 8%
+** Total **
+    LOC: 91
+    LLOC: 70
+    SLOC: 73
+    Comments: 7
+    Single comments: 5
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 10%
+        (C + M % L): 8%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 27
+    N1: 17
+    N2: 27
+    vocabulary: 31
+    length: 44
+    calculated_length: 136.38196255841368
+    volume: 217.98463765702255
+    difficulty: 2.0
+    effort: 435.9692753140451
+    time: 24.22051529522473
+    bugs: 0.07266154588567418
+#### Halstead complexity metrics (function)
+task.py:
+    validate_registration_form:
+        h1: 2
+        h2: 8
+        N1: 5
+        N2: 8
+        vocabulary: 10
+        length: 13
+        calculated_length: 26.0
+        volume: 43.18506523353572
+        difficulty: 1.0
+        effort: 43.18506523353572
+        time: 2.399170290751984
+        bugs: 0.014395021744511906
+    validate_login_form:
+        h1: 2
+        h2: 7
+        N1: 5
+        N2: 7
+        vocabulary: 9
+        length: 12
+        calculated_length: 21.651484454403228
+        volume: 38.03910001730775
+        difficulty: 1.0
+        effort: 38.03910001730775
+        time: 2.1132833342948754
+        bugs: 0.012679700005769252
+    register:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    login:
+        h1: 4
+        h2: 7
+        N1: 4
+        N2: 7
+        vocabulary: 11
+        length: 11
+        calculated_length: 27.651484454403228
+        volume: 38.053747805010275
+        difficulty: 2.0
+        effort: 76.10749561002055
+        time: 4.228194200556697
+        bugs: 0.012684582601670092
+    dashboard:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    index:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+# Task 2 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 64:0 add_to_cart - A (4)
+    F 27:0 initialize_database - A (3)
+    F 51:0 get_product - A (2)
+    F 95:0 test_api - A (1)
+    C 10:0 User - A (1)
+    C 15:0 Product - A (1)
+    C 21:0 Cart - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.8571428571428572)
+#### Maintainability Index score (multi-line comments)
+task.py - A (67.35)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (67.35)
+#### raw metrics
+task.py
+    LOC: 100
+    LLOC: 70
+    SLOC: 72
+    Comments: 11
+    Single comments: 9
+    Multi: 0
+    Blank: 19
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+** Total **
+    LOC: 100
+    LLOC: 70
+    SLOC: 72
+    Comments: 11
+    Single comments: 9
+    Multi: 0
+    Blank: 19
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 8
+    N1: 7
+    N2: 10
+    vocabulary: 12
+    length: 17
+    calculated_length: 32.0
+    volume: 60.94436251225966
+    difficulty: 2.5
+    effort: 152.36090628064915
+    time: 8.464494793369397
+    bugs: 0.020314787504086555
+#### Halstead complexity metrics (function)
+task.py:
+    initialize_database:
+        h1: 1
+        h2: 2
+        N1: 2
+        N2: 2
+        vocabulary: 3
+        length: 4
+        calculated_length: 2.0
+        volume: 6.339850002884625
+        difficulty: 0.5
+        effort: 3.1699250014423126
+        time: 0.17610694452457293
+        bugs: 0.002113283334294875
+    get_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_to_cart:
+        h1: 3
+        h2: 4
+        N1: 4
+        N2: 6
+        vocabulary: 7
+        length: 10
+        calculated_length: 12.75488750216347
+        volume: 28.07354922057604
+        difficulty: 2.25
+        effort: 63.16548574629609
+        time: 3.509193652572005
+        bugs: 0.009357849740192013
+    test_api:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 71:0 add_to_cart - B (6)
+    F 8:0 get_db - A (2)
+    F 45:0 close_connection - A (2)
+    F 52:0 get_product - A (2)
+    F 15:0 create_tables - A (1)
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.6)
+#### Maintainability Index score (multi-line comments)
+task.py - A (62.74)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (62.74)
+#### raw metrics
+task.py
+    LOC: 97
+    LLOC: 62
+    SLOC: 75
+    Comments: 7
+    Single comments: 6
+    Multi: 0
+    Blank: 16
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 7%
+** Total **
+    LOC: 97
+    LLOC: 62
+    SLOC: 75
+    Comments: 7
+    Single comments: 6
+    Multi: 0
+    Blank: 16
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 6
+    h2: 14
+    N1: 9
+    N2: 15
+    vocabulary: 20
+    length: 24
+    calculated_length: 68.81274391313339
+    volume: 103.72627427729671
+    difficulty: 3.2142857142857144
+    effort: 333.40588160559656
+    time: 18.522548978088697
+    bugs: 0.0345754247590989
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    create_tables:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    close_connection:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    get_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_to_cart:
+        h1: 3
+        h2: 8
+        N1: 6
+        N2: 9
+        vocabulary: 11
+        length: 15
+        calculated_length: 28.75488750216347
+        volume: 51.89147427955947
+        difficulty: 1.6875
+        effort: 87.5668628467566
+        time: 4.864825713708701
+        bugs: 0.01729715809318649
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 35:0 add_to_cart - A (3)
+    F 21:0 get_product - A (2)
+    C 8:0 Product - A (1)
+    C 14:0 CartItem - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.75)
+#### Maintainability Index score (multi-line comments)
+task.py - A (70.28)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (70.28)
+#### raw metrics
+task.py
+    LOC: 66
+    LLOC: 50
+    SLOC: 51
+    Comments: 6
+    Single comments: 2
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+** Total **
+    LOC: 66
+    LLOC: 50
+    SLOC: 51
+    Comments: 6
+    Single comments: 2
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 7
+    N1: 4
+    N2: 7
+    vocabulary: 11
+    length: 11
+    calculated_length: 27.651484454403228
+    volume: 38.053747805010275
+    difficulty: 2.0
+    effort: 76.10749561002055
+    time: 4.228194200556697
+    bugs: 0.012684582601670092
+#### Halstead complexity metrics (function)
+task.py:
+    get_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_to_cart:
+        h1: 3
+        h2: 5
+        N1: 3
+        N2: 5
+        vocabulary: 8
+        length: 8
+        calculated_length: 16.36452797660028
+        volume: 24.0
+        difficulty: 1.5
+        effort: 36.0
+        time: 2.0
+        bugs: 0.008 
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 75:0 query_db - A (3)
+    F 90:0 add_to_cart - A (3)
+    F 113:0 get_cart - A (3)
+    F 83:0 get_product - A (2)
+    F 10:0 get_db - A (1)
+    F 15:0 init_db - A (1)
+    F 49:0 insert_sample_data - A (1)
+    F 68:0 execute_query - A (1)
+
+8 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.875)
+#### Maintainability Index score (multi-line comments)
+task.py - A (63.39)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (63.39)
+#### raw metrics
+task.py
+    LOC: 128
+    LLOC: 73
+    SLOC: 97
+    Comments: 9
+    Single comments: 6
+    Multi: 0
+    Blank: 25
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 7%
+** Total **
+    LOC: 128
+    LLOC: 73
+    SLOC: 97
+    Comments: 9
+    Single comments: 6
+    Multi: 0
+    Blank: 25
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 9
+    N1: 5
+    N2: 10
+    vocabulary: 11
+    length: 15
+    calculated_length: 30.529325012980813
+    volume: 51.89147427955947
+    difficulty: 1.1111111111111112
+    effort: 57.65719364395497
+    time: 3.203177424664165
+    bugs: 0.01729715809318649
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    insert_sample_data:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    execute_query:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    query_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_product:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    add_to_cart:
+        h1: 1
+        h2: 3
+        N1: 2
+        N2: 4
+        vocabulary: 4
+        length: 6
+        calculated_length: 4.754887502163469
+        volume: 12.0
+        difficulty: 0.6666666666666666
+        effort: 8.0
+        time: 0.4444444444444444
+        bugs: 0.004
+    get_cart:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 52:0 get_product - A (3)
+    F 63:0 add_to_cart - A (3)
+    F 26:0 init_db - A (1)
+    C 9:0 User - A (1)
+    C 13:0 Product - A (1)
+    C 19:0 Cart - A (1)
+
+6 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.6666666666666667)
+#### Maintainability Index score (multi-line comments)
+task.py - A (68.47)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (68.47)
+#### raw metrics
+task.py
+    LOC: 79
+    LLOC: 65
+    SLOC: 60
+    Comments: 7
+    Single comments: 6
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+** Total **
+    LOC: 79
+    LLOC: 65
+    SLOC: 60
+    Comments: 7
+    Single comments: 6
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 6
+    N1: 3
+    N2: 6
+    vocabulary: 9
+    length: 9
+    calculated_length: 20.264662506490406
+    volume: 28.529325012980813
+    difficulty: 1.5
+    effort: 42.793987519471216
+    time: 2.377443751081734
+    bugs: 0.009509775004326938
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_to_cart:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 59:0 add_to_cart - A (4)
+    F 80:0 get_cart_items - A (3)
+    F 50:0 get_product - A (2)
+    C 14:0 Product - A (2)
+    C 30:0 CartItem - A (2)
+    C 9:0 User - A (1)
+    M 21:4 Product.serialize - A (1)
+    M 36:4 CartItem.serialize - A (1)
+    C 44:0 Cart - A (1)
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.8888888888888888)
+#### Maintainability Index score (multi-line comments)
+task.py - A (59.38)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (59.38)
+#### raw metrics
+task.py
+    LOC: 105
+    LLOC: 72
+    SLOC: 82
+    Comments: 4
+    Single comments: 3
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 5%
+        (C + M % L): 4%
+** Total **
+    LOC: 105
+    LLOC: 72
+    SLOC: 82
+    Comments: 4
+    Single comments: 3
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 5%
+        (C + M % L): 4%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 8
+    N1: 5
+    N2: 8
+    vocabulary: 12
+    length: 13
+    calculated_length: 32.0
+    volume: 46.604512509375034
+    difficulty: 2.0
+    effort: 93.20902501875007
+    time: 5.178279167708337
+    bugs: 0.015534837503125011
+#### Halstead complexity metrics (function)
+task.py:
+    serialize:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    serialize:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_to_cart:
+        h1: 3
+        h2: 6
+        N1: 4
+        N2: 6
+        vocabulary: 9
+        length: 10
+        calculated_length: 20.264662506490406
+        volume: 31.699250014423125
+        difficulty: 1.5
+        effort: 47.548875021634686
+        time: 2.6416041678685938
+        bugs: 0.010566416671474375
+    get_cart_items:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+# Task 3 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 56:0 add_card - B (6)
+    F 31:0 validate_expiry_date - A (3)
+    F 44:0 login - A (3)
+    F 99:0 view_cards - A (3)
+    F 119:0 logout - A (1)
+    C 13:0 User - A (1)
+    C 19:0 PaymentCard - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.5714285714285716)
+#### Maintainability Index score (multi-line comments)
+task.py - A (62.86)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (62.86)
+#### raw metrics
+task.py
+    LOC: 134
+    LLOC: 85
+    SLOC: 98
+    Comments: 14
+    Single comments: 13
+    Multi: 0
+    Blank: 23
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 14%
+        (C + M % L): 10%
+** Total **
+    LOC: 134
+    LLOC: 85
+    SLOC: 98
+    Comments: 14
+    Single comments: 13
+    Multi: 0
+    Blank: 23
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 14%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 14
+    N1: 8
+    N2: 14
+    vocabulary: 19
+    length: 22
+    calculated_length: 64.91260938324326
+    volume: 93.45440529575887
+    difficulty: 2.5
+    effort: 233.6360132393972
+    time: 12.979778513299843
+    bugs: 0.031151468431919623
+#### Halstead complexity metrics (function)
+task.py:
+    validate_expiry_date:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    login:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    add_card:
+        h1: 2
+        h2: 5
+        N1: 3
+        N2: 5
+        vocabulary: 7
+        length: 8
+        calculated_length: 13.60964047443681
+        volume: 22.458839376460833
+        difficulty: 1.0
+        effort: 22.458839376460833
+        time: 1.2477132986922685
+        bugs: 0.007486279792153611
+    view_cards:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 34:0 add_payment_card - A (5)
+    F 8:0 initialize_database - A (1)
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (68.22)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (68.22)
+#### raw metrics
+task.py
+    LOC: 68
+    LLOC: 42
+    SLOC: 55
+    Comments: 4
+    Single comments: 4
+    Multi: 0
+    Blank: 9
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 7%
+        (C + M % L): 6%
+** Total **
+    LOC: 68
+    LLOC: 42
+    SLOC: 55
+    Comments: 4
+    Single comments: 4
+    Multi: 0
+    Blank: 9
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 7%
+        (C + M % L): 6%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 7
+    N1: 4
+    N2: 7
+    vocabulary: 11
+    length: 11
+    calculated_length: 27.651484454403228
+    volume: 38.053747805010275
+    difficulty: 2.0
+    effort: 76.10749561002055
+    time: 4.228194200556697
+    bugs: 0.012684582601670092
+#### Halstead complexity metrics (function)
+task.py:
+    initialize_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_payment_card:
+        h1: 3
+        h2: 5
+        N1: 3
+        N2: 5
+        vocabulary: 8
+        length: 8
+        calculated_length: 16.36452797660028
+        volume: 24.0
+        difficulty: 1.5
+        effort: 36.0
+        time: 2.0
+        bugs: 0.008
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 27:0 add_card - B (6)
+    F 63:0 success - A (1)
+    C 12:0 User - A (1)
+    C 18:0 Card - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.25)
+#### Maintainability Index score (multi-line comments)
+task.py - A (64.64)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (64.64)
+#### raw metrics
+task.py
+    LOC: 70
+    LLOC: 52
+    SLOC: 52
+    Comments: 3
+    Single comments: 3
+    Multi: 0
+    Blank: 15
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 6%
+        (C + M % L): 4%
+** Total **
+    LOC: 70
+    LLOC: 52
+    SLOC: 52
+    Comments: 3
+    Single comments: 3
+    Multi: 0
+    Blank: 15
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 6%
+        (C + M % L): 4%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 7
+    N1: 4
+    N2: 7
+    vocabulary: 10
+    length: 11
+    calculated_length: 24.406371956566698
+    volume: 36.541209043760986
+    difficulty: 1.5
+    effort: 54.81181356564148
+    time: 3.0451007536467487
+    bugs: 0.012180403014586996
+#### Halstead complexity metrics (function)
+task.py:
+    add_card:
+        h1: 3
+        h2: 5
+        N1: 3
+        N2: 5
+        vocabulary: 8
+        length: 8
+        calculated_length: 16.36452797660028
+        volume: 24.0
+        difficulty: 1.5
+        effort: 36.0
+        time: 2.0
+        bugs: 0.008
+    success:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 57:0 add_card - B (8)
+    F 40:0 validate_expiration_date - A (3)
+    F 87:0 get_cards - A (2)
+    F 17:0 init_db - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (59.27)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (59.27)
+#### raw metrics
+task.py
+    LOC: 110
+    LLOC: 69
+    SLOC: 84
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 7%
+        (C + M % L): 5%
+** Total **
+    LOC: 110
+    LLOC: 69
+    SLOC: 84
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 7%
+        (C + M % L): 5%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 6
+    h2: 17
+    N1: 8
+    N2: 17
+    vocabulary: 23
+    length: 25
+    calculated_length: 84.99664330558272
+    volume: 113.08904890142533
+    difficulty: 3.0
+    effort: 339.267146704276
+    time: 18.848174816904223
+    bugs: 0.03769634963380844
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    validate_expiration_date:
+        h1: 4
+        h2: 7
+        N1: 4
+        N2: 7
+        vocabulary: 11
+        length: 11
+        calculated_length: 27.651484454403228
+        volume: 38.053747805010275
+        difficulty: 2.0
+        effort: 76.10749561002055
+        time: 4.228194200556697
+        bugs: 0.012684582601670092
+    add_card:
+        h1: 2
+        h2: 8
+        N1: 3
+        N2: 8
+        vocabulary: 10
+        length: 11
+        calculated_length: 26.0
+        volume: 36.541209043760986
+        difficulty: 1.0
+        effort: 36.541209043760986
+        time: 2.0300671690978325
+        bugs: 0.012180403014586996
+    get_cards:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 56:0 register_card - A (5)
+    F 46:0 is_valid_expiration - A (2)
+    F 12:0 create_tables - A (1)
+    F 42:0 hash_password - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.25)
+#### Maintainability Index score (multi-line comments)
+task.py - A (69.12)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (69.12)
+#### raw metrics
+task.py
+    LOC: 98
+    LLOC: 60
+    SLOC: 73
+    Comments: 11        
+    Single comments: 11 
+    Multi: 0
+    Blank: 14
+    - Comment Stats     
+        (C % L): 11%    
+        (C % S): 15%    
+        (C + M % L): 11%
+** Total **
+    LOC: 98
+    LLOC: 60
+    SLOC: 73
+    Comments: 11        
+    Single comments: 11
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 9
+    N1: 6
+    N2: 9
+    vocabulary: 13
+    length: 15
+    calculated_length: 36.52932501298081
+    volume: 55.506595772116384
+    difficulty: 2.0
+    effort: 111.01319154423277
+    time: 6.167399530235154
+    bugs: 0.01850219859070546
+#### Halstead complexity metrics (function)
+task.py:
+    create_tables:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    hash_password:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    is_valid_expiration:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    register_card:
+        h1: 2
+        h2: 5
+        N1: 4
+        N2: 5
+        vocabulary: 7
+        length: 9
+        calculated_length: 13.60964047443681
+        volume: 25.26619429851844
+        difficulty: 1.0
+        effort: 25.26619429851844
+        time: 1.403677461028802
+        bugs: 0.008422064766172813
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 39:0 validate_expiration_date - A (4)
+    F 54:0 register_card - A (4)
+    F 11:0 create_database - A (1)
+    F 35:0 generate_token - A (1)
+    F 74:0 register_card_endpoint - A (1)
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.2)
+#### Maintainability Index score (multi-line comments)
+task.py - A (66.75)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (66.75)
+#### raw metrics
+task.py
+    LOC: 82
+    LLOC: 53
+    SLOC: 61
+    Comments: 8
+    Single comments: 8
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+** Total **
+    LOC: 82
+    LLOC: 53
+    SLOC: 61
+    Comments: 8
+    Single comments: 8
+    Multi: 0
+    Blank: 13
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 8
+    h2: 15
+    N1: 9
+    N2: 17
+    vocabulary: 23
+    length: 26
+    calculated_length: 82.60335893412778
+    volume: 117.61261085748234
+    difficulty: 4.533333333333333
+    effort: 533.1771692205866
+    time: 29.620953845588147
+    bugs: 0.03920420361916078
+#### Halstead complexity metrics (function)
+task.py:
+    create_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_token:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    validate_expiration_date:
+        h1: 5
+        h2: 8
+        N1: 5
+        N2: 10
+        vocabulary: 13
+        length: 15
+        calculated_length: 35.60964047443681
+        volume: 55.506595772116384
+        difficulty: 3.125
+        effort: 173.4581117878637
+        time: 9.636561765992427
+        bugs: 0.01850219859070546
+    register_card:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    register_card_endpoint:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+# Task 4 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 44:0 search - A (3)
+    F 55:0 add - A (3)
+    F 7:0 init_db - A (1)
+    F 19:0 add_product - A (1)
+    F 27:0 search_products - A (1)
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.8)
+#### Maintainability Index score (multi-line comments)
+task.py - A (59.49)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (59.49)
+#### raw metrics
+task.py
+    LOC: 74
+    LLOC: 60
+    SLOC: 59
+    Comments: 2
+    Single comments: 7
+    Multi: 0
+    Blank: 8
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 3%
+        (C + M % L): 3%
+** Total **
+    LOC: 74
+    LLOC: 60
+    SLOC: 59
+    Comments: 2
+    Single comments: 7
+    Multi: 0
+    Blank: 8
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 3%
+        (C + M % L): 3%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 8
+    N1: 6
+    N2: 8
+    vocabulary: 11
+    length: 14
+    calculated_length: 28.75488750216347
+    volume: 48.43204266092217
+    difficulty: 1.5
+    effort: 72.64806399138325
+    time: 4.036003555076848
+    bugs: 0.016144014220307392
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    search_products:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    search:
+        h1: 1
+        h2: 2
+        N1: 2
+        N2: 2
+        vocabulary: 3
+        length: 4
+        calculated_length: 2.0
+        volume: 6.339850002884625
+        difficulty: 0.5
+        effort: 3.1699250014423126
+        time: 0.17610694452457293
+        bugs: 0.002113283334294875
+    add:
+        h1: 2
+        h2: 4
+        N1: 3
+        N2: 4
+        vocabulary: 6
+        length: 7
+        calculated_length: 10.0
+        volume: 18.094737505048094
+        difficulty: 1.0
+        effort: 18.094737505048094
+        time: 1.0052631947248942
+        bugs: 0.006031579168349364
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 41:0 search - A (4)
+    F 7:0 get_db - A (2)
+    F 14:0 close_db - A (2)
+    F 19:0 init_db - A (1)
+    F 35:0 search_products - A (1)
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (71.40)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (71.40)
+#### raw metrics
+task.py
+    LOC: 52
+    LLOC: 36
+    SLOC: 39
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 8
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+** Total **
+    LOC: 52
+    LLOC: 36
+    SLOC: 39
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 8
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 10
+    N1: 8
+    N2: 14
+    vocabulary: 14
+    length: 22
+    calculated_length: 41.219280948873624
+    volume: 83.76180828526728
+    difficulty: 2.8
+    effort: 234.53306319874835
+    time: 13.029614622152685
+    bugs: 0.02792060276175576
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    close_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    search_products:
+        h1: 1
+        h2: 4
+        N1: 4
+        N2: 8
+        vocabulary: 5
+        length: 12
+        calculated_length: 8.0
+        volume: 27.863137138648348
+        difficulty: 1.0
+        effort: 27.863137138648348
+        time: 1.5479520632582415
+        bugs: 0.00928771237954945
+    search:
+        h1: 1
+        h2: 2
+        N1: 2
+        N2: 2
+        vocabulary: 3
+        length: 4
+        calculated_length: 2.0
+        volume: 6.339850002884625
+        difficulty: 0.5
+        effort: 3.1699250014423126
+        time: 0.17610694452457293
+        bugs: 0.002113283334294875
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 49:0 search_products - A (4)
+    F 34:0 index_product - A (2)
+    F 81:0 search - A (2)
+    F 9:0 create_search_index - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.25)
+#### Maintainability Index score (multi-line comments)
+task.py - A (66.84)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (66.84)
+#### raw metrics
+task.py
+    LOC: 98
+    LLOC: 55
+    SLOC: 67
+    Comments: 7
+    Single comments: 8
+    Multi: 0
+    Blank: 23
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 7%
+** Total **
+    LOC: 98
+    LLOC: 55
+    SLOC: 67
+    Comments: 7
+    Single comments: 8
+    Multi: 0
+    Blank: 23
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 10
+    N1: 6
+    N2: 10
+    vocabulary: 13
+    length: 16
+    calculated_length: 37.974168451037094
+    volume: 59.207035490257475
+    difficulty: 1.5
+    effort: 88.81055323538621
+    time: 4.933919624188123
+    bugs: 0.019735678496752493
+#### Halstead complexity metrics (function)
+task.py:
+    create_search_index:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    index_product:
+        h1: 1
+        h2: 6
+        N1: 3
+        N2: 6
+        vocabulary: 7
+        length: 9
+        calculated_length: 15.509775004326936
+        volume: 25.26619429851844
+        difficulty: 0.5
+        effort: 12.63309714925922
+        time: 0.701838730514401
+        bugs: 0.008422064766172813
+    search_products:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    search:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 65:0 search - B (8)
+    F 33:0 search_products - A (5)
+    F 7:0 init_db - A (1)
+    F 28:0 initialize_database - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.75)
+#### Maintainability Index score (multi-line comments)
+task.py - A (62.27)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (62.27)
+#### raw metrics
+task.py
+    LOC: 105
+    LLOC: 70
+    SLOC: 77
+    Comments: 7
+    Single comments: 7
+    Multi: 0
+    Blank: 21
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 7%
+** Total **
+    LOC: 105
+    LLOC: 70
+    SLOC: 77
+    Comments: 7
+    Single comments: 7
+    Multi: 0
+    Blank: 21
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 9
+    N1: 7
+    N2: 12
+    vocabulary: 12
+    length: 19
+    calculated_length: 33.28421251514428
+    volume: 68.11428751370197
+    difficulty: 2.0
+    effort: 136.22857502740393
+    time: 7.568254168189108
+    bugs: 0.022704762504567322
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    initialize_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    search_products:
+        h1: 1
+        h2: 5
+        N1: 4
+        N2: 8
+        vocabulary: 6
+        length: 12
+        calculated_length: 11.60964047443681
+        volume: 31.019550008653873
+        difficulty: 0.8
+        effort: 24.8156400069231
+        time: 1.3786466670512834
+        bugs: 0.010339850002884624
+    search:
+        h1: 1
+        h2: 2
+        N1: 2
+        N2: 2
+        vocabulary: 3
+        length: 4
+        calculated_length: 2.0
+        volume: 6.339850002884625
+        difficulty: 0.5
+        effort: 3.1699250014423126
+        time: 0.17610694452457293
+        bugs: 0.002113283334294875
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 21:0 search_products - C (17)
+    F 8:0 get_db - A (2)
+    F 15:0 close_connection - A (2)
+
+3 blocks (classes, functions, methods) analyzed.
+Average complexity: B (7.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (57.61)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (57.61)
+#### raw metrics
+task.py
+    LOC: 82
+    LLOC: 64
+    SLOC: 62
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 7%
+** Total **
+    LOC: 82
+    LLOC: 64
+    SLOC: 62
+    Comments: 6
+    Single comments: 6
+    Multi: 0
+    Blank: 14
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 7%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 8
+    h2: 32
+    N1: 23
+    N2: 44
+    vocabulary: 40
+    length: 67
+    calculated_length: 184.0
+    volume: 356.5691823574533
+    difficulty: 5.5
+    effort: 1961.1305029659932
+    time: 108.95169460922185
+    bugs: 0.11885639411915111
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    close_connection:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    search_products:
+        h1: 5
+        h2: 26
+        N1: 20
+        N2: 38
+        vocabulary: 31
+        length: 58
+        calculated_length: 133.82107314610522
+        volume: 287.3433860024388
+        difficulty: 3.6538461538461537
+        effort: 1049.908525778142
+        time: 58.328251432118996
+        bugs: 0.0957811286674796
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    M 25:4 ProductSearch.search_products - B (10)
+    C 4:0 ProductSearch - A (4)
+    M 5:4 ProductSearch.__init__ - A (1)
+    M 9:4 ProductSearch.create_table - A (1)
+    M 57:4 ProductSearch.close_connection - A (1)
+    M 60:4 ProductSearch.insert_test_data - A (1)
+
+6 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (54.90)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (54.90)
+#### raw metrics
+task.py
+    LOC: 82
+    LLOC: 48
+    SLOC: 64
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 1%
+        (C % S): 2%
+        (C + M % L): 1%
+** Total **
+    LOC: 82
+    LLOC: 48
+    SLOC: 64
+    Comments: 1
+    Single comments: 1
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 1%
+        (C % S): 2%
+        (C + M % L): 1%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 10
+    N1: 10
+    N2: 15
+    vocabulary: 13
+    length: 25
+    calculated_length: 37.974168451037094
+    volume: 92.5109929535273
+    difficulty: 2.25
+    effort: 208.14973414543644
+    time: 11.563874119190913
+    bugs: 0.030836997651175767
+#### Halstead complexity metrics (function)
+task.py:
+    __init__:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    create_table:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    search_products:
+        h1: 2
+        h2: 8
+        N1: 9
+        N2: 13
+        vocabulary: 10
+        length: 22
+        calculated_length: 26.0
+        volume: 73.08241808752197
+        difficulty: 1.625
+        effort: 118.75892939222321
+        time: 6.597718299567956
+        bugs: 0.024360806029173992
+    close_connection:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    insert_test_data:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+# Task 5 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 90:0 update_product - A (3)
+    F 121:0 delete_product - A (3)
+    F 11:0 get_db - A (2)
+    F 18:0 close_connection - A (2)
+    F 63:0 is_admin - A (2)
+    F 72:0 add_product - A (2)
+    F 23:0 init_db - A (1)
+    F 50:0 add_user - A (1)
+    F 144:0 view_products - A (1)
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.8888888888888888)
+#### Maintainability Index score (multi-line comments)
+task.py - A (59.19)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (59.19)
+#### raw metrics
+task.py
+    LOC: 154
+    LLOC: 103
+    SLOC: 114
+    Comments: 14
+    Single comments: 14
+    Multi: 0
+    Blank: 26
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+** Total **
+    LOC: 154
+    LLOC: 103
+    SLOC: 114
+    Comments: 14
+    Single comments: 14
+    Multi: 0
+    Blank: 26
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 19
+    N1: 11
+    N2: 19
+    vocabulary: 24
+    length: 30
+    calculated_length: 92.32026322986493
+    volume: 137.5488750216347
+    difficulty: 2.5
+    effort: 343.87218755408674
+    time: 19.104010419671486
+    bugs: 0.04584962500721157
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    close_connection:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    is_admin:
+        h1: 3
+        h2: 6
+        N1: 3
+        N2: 6
+        vocabulary: 9
+        length: 9
+        calculated_length: 20.264662506490406
+        volume: 28.529325012980813
+        difficulty: 1.5
+        effort: 42.793987519471216
+        time: 2.377443751081734
+        bugs: 0.009509775004326938
+    add_product:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    update_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    delete_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    view_products:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 60:0 remove_product - A (3)
+    F 89:0 modify_product - A (3)
+    F 27:0 is_admin - A (2)
+    F 43:0 add_product - A (2)
+    F 7:0 initialize_database - A (1)
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.2)
+#### Maintainability Index score (multi-line comments)
+task.py - A (67.09)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (67.09)
+#### raw metrics
+task.py
+    LOC: 120
+    LLOC: 78
+    SLOC: 75
+    Comments: 12
+    Single comments: 12
+    Multi: 0
+    Blank: 33
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 16%
+        (C + M % L): 10%
+** Total **
+    LOC: 120
+    LLOC: 78
+    SLOC: 75
+    Comments: 12
+    Single comments: 12
+    Multi: 0
+    Blank: 33
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 16%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 9
+    N1: 6
+    N2: 9
+    vocabulary: 12
+    length: 15
+    calculated_length: 33.28421251514428
+    volume: 53.77443751081735
+    difficulty: 1.5
+    effort: 80.66165626622603
+    time: 4.481203125901446
+    bugs: 0.017924812503605784
+#### Halstead complexity metrics (function)
+task.py:
+    initialize_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    is_admin:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_product:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    remove_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    modify_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 138:0 login - A (4)
+    F 160:0 edit_product - A (4)
+    F 94:0 add_product - A (3)
+    F 117:0 delete_product - A (3)
+    F 60:0 load_user - A (2)
+    C 51:0 User - A (2)
+    F 20:0 init_db - A (1)
+    F 70:0 admin_required - A (1)
+    F 83:0 products - A (1)
+    F 191:0 logout - A (1)
+    M 52:4 User.__init__ - A (1)
+
+11 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.090909090909091)
+#### Maintainability Index score (multi-line comments)
+task.py - A (51.07)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (51.07)
+#### raw metrics
+task.py
+    LOC: 197
+    LLOC: 148
+    SLOC: 159
+    Comments: 12
+    Single comments: 12
+    Multi: 0
+    Blank: 26
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 8%
+        (C + M % L): 6%
+** Total **
+    LOC: 197
+    LLOC: 148
+    SLOC: 159
+    Comments: 12
+    Single comments: 12
+    Multi: 0
+    Blank: 26
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 8%
+        (C + M % L): 6%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 22
+    N1: 12
+    N2: 22
+    vocabulary: 27
+    length: 34
+    calculated_length: 109.71713608445735
+    volume: 161.66617507355795
+    difficulty: 2.5
+    effort: 404.1654376838949
+    time: 22.45363542688305
+    bugs: 0.053888725024519316
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    __init__:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    load_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    admin_required:
+        h1: 2
+        h2: 4
+        N1: 3
+        N2: 4
+        vocabulary: 6
+        length: 7
+        calculated_length: 10.0
+        volume: 18.094737505048094
+        difficulty: 1.0
+        effort: 18.094737505048094
+        time: 1.0052631947248942
+        bugs: 0.006031579168349364
+    products:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_product:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    delete_product:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    login:
+        h1: 2
+        h2: 6
+        N1: 3
+        N2: 6
+        vocabulary: 8
+        length: 9
+        calculated_length: 17.509775004326936
+        volume: 27.0
+        difficulty: 1.0
+        effort: 27.0
+        time: 1.5
+        bugs: 0.009
+    edit_product:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 69:0 login - A (3)
+    F 89:0 admin_panel - A (3)
+    F 55:0 load_user - A (1)
+    F 58:0 admin_required - A (1)
+    F 83:0 logout - A (1)
+    F 110:0 edit_product - A (1)
+    F 118:0 delete_product - A (1)
+    C 27:0 User - A (1)
+    C 34:0 Product - A (1)
+    C 41:0 ProductForm - A (1)
+    C 48:0 LoginForm - A (1)
+
+11 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.3636363636363635)
+#### Maintainability Index score (multi-line comments)
+task.py - A (63.39)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (63.39)
+#### raw metrics
+task.py
+    LOC: 138
+    LLOC: 111
+    SLOC: 111
+    Comments: 11
+    Single comments: 9
+    Multi: 0
+    Blank: 18
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 10%
+        (C + M % L): 8%
+** Total **
+    LOC: 138
+    LLOC: 111
+    SLOC: 111
+    Comments: 11
+    Single comments: 9
+    Multi: 0
+    Blank: 18
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 10%
+        (C + M % L): 8%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 4
+    N1: 3
+    N2: 4
+    vocabulary: 6
+    length: 7
+    calculated_length: 10.0
+    volume: 18.094737505048094
+    difficulty: 1.0
+    effort: 18.094737505048094
+    time: 1.0052631947248942
+    bugs: 0.006031579168349364
+#### Halstead complexity metrics (function)
+task.py:
+    load_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    admin_required:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    login:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    admin_panel:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    edit_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    delete_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 52:0 edit_product - A (4)
+    F 85:0 login - A (4)
+    F 40:0 add_product - A (3)
+    F 73:0 delete_product - A (3)
+    F 27:0 is_admin - A (1)
+    F 33:0 index - A (1)
+    F 97:0 logout - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.4285714285714284)      
+#### Maintainability Index score (multi-line comments)
+task.py - A (62.21)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (62.21)
+#### raw metrics
+task.py
+    LOC: 102
+    LLOC: 72
+    SLOC: 76
+    Comments: 9        
+    Single comments: 7 
+    Multi: 0
+    Blank: 19
+    - Comment Stats    
+        (C % L): 9%    
+        (C % S): 12%   
+        (C + M % L): 9%
+** Total **
+    LOC: 102
+    LLOC: 72
+    SLOC: 76
+    Comments: 9
+    Single comments: 7
+    Multi: 0
+    Blank: 19
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 19
+    N1: 10
+    N2: 19
+    vocabulary: 22
+    length: 29
+    calculated_length: 85.46551025759159
+    volume: 129.32351694048162
+    difficulty: 1.5
+    effort: 193.98527541072244
+    time: 10.776959745040136
+    bugs: 0.04310783898016054
+#### Halstead complexity metrics (function)
+task.py:
+    is_admin:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    index:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_product:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    edit_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    delete_product:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    login:
+        h1: 2
+        h2: 8
+        N1: 4
+        N2: 8
+        vocabulary: 10
+        length: 12
+        calculated_length: 26.0
+        volume: 39.863137138648355
+        difficulty: 1.0
+        effort: 39.863137138648355
+        time: 2.2146187299249087
+        bugs: 0.013287712379549451
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 111:0 edit_product - A (5)
+    F 72:0 login - A (4)
+    F 91:0 delete_product - A (4)
+    F 52:0 add_product - A (3)
+    F 43:0 admin_products - A (2)
+    F 16:0 set_admin_session - A (1)
+    C 19:0 User - A (1)
+    C 25:0 Product - A (1)
+    C 32:0 ProductForm - A (1)
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.4444444444444446)
+#### Maintainability Index score (multi-line comments)
+task.py - A (54.34)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (54.34)
+#### raw metrics
+task.py
+    LOC: 136
+    LLOC: 106
+    SLOC: 106
+    Comments: 7
+    Single comments: 2
+    Multi: 0
+    Blank: 28
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 7%
+        (C + M % L): 5%
+** Total **
+    LOC: 136
+    LLOC: 106
+    SLOC: 106
+    Comments: 7
+    Single comments: 2
+    Multi: 0
+    Blank: 28
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 7%
+        (C + M % L): 5%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 16
+    N1: 10
+    N2: 16
+    vocabulary: 19
+    length: 26
+    calculated_length: 68.75488750216347
+    volume: 110.44611534953322
+    difficulty: 1.5
+    effort: 165.66917302429982
+    time: 9.203842945794435
+    bugs: 0.03681537178317774
+#### Halstead complexity metrics (function)
+task.py:
+    set_admin_session:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    admin_products:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    add_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    login:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    delete_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    edit_product:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+# Task 6 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 38:0 review_product - B (10)
+    F 91:0 review_success - A (1)
+
+2 blocks (classes, functions, methods) analyzed.
+Average complexity: B (5.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (63.84)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (63.84)
+#### raw metrics
+task.py
+    LOC: 95
+    LLOC: 68
+    SLOC: 68
+    Comments: 9
+    Single comments: 9
+    Multi: 0
+    Blank: 18
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 13%
+        (C + M % L): 9%
+** Total **
+    LOC: 95
+    LLOC: 68
+    SLOC: 68
+    Comments: 9
+    Single comments: 9
+    Multi: 0
+    Blank: 18
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 13%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 15
+    N1: 11
+    N2: 17
+    vocabulary: 20
+    length: 28
+    calculated_length: 70.2129994085646
+    volume: 121.01398665684616
+    difficulty: 2.8333333333333335
+    effort: 342.8729621943975
+    time: 19.048497899688748
+    bugs: 0.040337995552282055
+#### Halstead complexity metrics (function)
+task.py:
+    review_product:
+        h1: 5
+        h2: 12
+        N1: 9
+        N2: 14
+        vocabulary: 17
+        length: 23
+        calculated_length: 54.62919048309069
+        volume: 94.01164534875782
+        difficulty: 2.9166666666666665
+        effort: 274.2006322672103
+        time: 15.233368459289462
+        bugs: 0.031337215116252606
+    review_success:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 39:0 add_review - A (4)
+    F 7:0 init_db - A (1)
+    F 28:0 has_user_bought_product - A (1)
+
+3 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (69.14)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (69.14)
+#### raw metrics
+task.py
+    LOC: 65
+    LLOC: 43
+    SLOC: 48
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 12
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 10%
+        (C + M % L): 8%
+** Total **
+    LOC: 65
+    LLOC: 43
+    SLOC: 48
+    Comments: 5
+    Single comments: 5
+    Multi: 0
+    Blank: 12
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 10%
+        (C + M % L): 8%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 10
+    N1: 7
+    N2: 10
+    vocabulary: 14
+    length: 17
+    calculated_length: 41.219280948873624
+    volume: 64.72503367497926
+    difficulty: 2.0
+    effort: 129.45006734995852
+    time: 7.191670408331029
+    bugs: 0.021575011224993085
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    has_user_bought_product:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    add_review:
+        h1: 2
+        h2: 6
+        N1: 5
+        N2: 6
+        vocabulary: 8
+        length: 11
+        calculated_length: 17.509775004326936
+        volume: 33.0
+        difficulty: 1.0
+        effort: 33.0
+        time: 1.8333333333333333
+        bugs: 0.011
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 75:0 add_review - B (7)
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (7.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (68.45)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (68.45)
+#### raw metrics
+task.py
+    LOC: 121
+    LLOC: 42
+    SLOC: 91
+    Comments: 11
+    Single comments: 10
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+** Total **
+    LOC: 121
+    LLOC: 42
+    SLOC: 91
+    Comments: 11
+    Single comments: 10
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 7
+    h2: 13
+    N1: 9
+    N2: 17
+    vocabulary: 20
+    length: 26
+    calculated_length: 67.75720079023742
+    volume: 112.37013046707143
+    difficulty: 4.576923076923077
+    effort: 514.3094432915962
+    time: 28.572746849533118
+    bugs: 0.03745671015569048
+#### Halstead complexity metrics (function)
+task.py:
+    add_review:
+        h1: 7
+        h2: 13
+        N1: 9
+        N2: 17
+        vocabulary: 20
+        length: 26
+        calculated_length: 67.75720079023742
+        volume: 112.37013046707143
+        difficulty: 4.576923076923077
+        effort: 514.3094432915962
+        time: 28.572746849533118
+        bugs: 0.03745671015569048
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 59:0 add_review - A (4)
+    F 53:0 index - A (1)
+    C 22:0 User - A (1)
+    C 27:0 Product - A (1)
+    C 32:0 Purchase - A (1)
+    C 38:0 Review - A (1)
+    C 46:0 ReviewForm - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.4285714285714286)
+#### Maintainability Index score (multi-line comments)
+task.py - A (72.08)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (72.08)
+#### raw metrics
+task.py
+    LOC: 111
+    LLOC: 74
+    SLOC: 79
+    Comments: 16
+    Single comments: 15
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 14%
+        (C % S): 20%
+        (C + M % L): 14%
+** Total **
+    LOC: 111
+    LLOC: 74
+    SLOC: 79
+    Comments: 16
+    Single comments: 15
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 14%
+        (C % S): 20%
+        (C + M % L): 14%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 5
+    N1: 4
+    N2: 5
+    vocabulary: 7
+    length: 9
+    calculated_length: 13.60964047443681
+    volume: 25.26619429851844
+    difficulty: 1.0
+    effort: 25.26619429851844
+    time: 1.403677461028802
+    bugs: 0.008422064766172813
+#### Halstead complexity metrics (function)
+task.py:
+    index:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    add_review:
+        h1: 1
+        h2: 2
+        N1: 2
+        N2: 2
+        vocabulary: 3
+        length: 4
+        calculated_length: 2.0
+        volume: 6.339850002884625
+        difficulty: 0.5
+        effort: 3.1699250014423126
+        time: 0.17610694452457293
+        bugs: 0.002113283334294875
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 77:0 submit_review - B (6)
+    C 42:0 Review - A (3)
+    F 106:0 view_reviews - A (2)
+    M 50:4 Review.validate_rating - A (2)
+    F 73:0 index - A (1)
+    C 21:0 User - A (1)
+    C 27:0 Product - A (1)
+    C 33:0 Purchase - A (1)
+
+8 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.125)
+#### Maintainability Index score (multi-line comments)
+task.py - A (68.80)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (68.80)
+#### raw metrics
+task.py
+    LOC: 116
+    LLOC: 80
+    SLOC: 80
+    Comments: 17
+    Single comments: 16
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 15%
+        (C % S): 21%
+        (C + M % L): 15%
+** Total **
+    LOC: 116
+    LLOC: 80
+    SLOC: 80
+    Comments: 17
+    Single comments: 16
+    Multi: 0
+    Blank: 20
+    - Comment Stats
+        (C % L): 15%
+        (C % S): 21%
+        (C + M % L): 15%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 9
+    N1: 6
+    N2: 9
+    vocabulary: 13
+    length: 15
+    calculated_length: 36.52932501298081
+    volume: 55.506595772116384
+    difficulty: 2.0
+    effort: 111.01319154423277
+    time: 6.167399530235154
+    bugs: 0.01850219859070546
+#### Halstead complexity metrics (function)
+task.py:
+    validate_rating:
+        h1: 1
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 4
+        length: 5
+        calculated_length: 4.754887502163469
+        volume: 10.0
+        difficulty: 0.5
+        effort: 5.0
+        time: 0.2777777777777778
+        bugs: 0.0033333333333333335
+    index:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    submit_review:
+        h1: 2
+        h2: 4
+        N1: 3
+        N2: 4
+        vocabulary: 6
+        length: 7
+        calculated_length: 10.0
+        volume: 18.094737505048094
+        difficulty: 1.0
+        effort: 18.094737505048094
+        time: 1.0052631947248942
+        bugs: 0.006031579168349364
+    view_reviews:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 67:0 submit_review - C (11)
+    F 7:0 create_database - A (1)
+    F 45:0 populate_database - A (1)
+    F 131:0 product_page - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (3.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (61.61)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (61.61)
+#### raw metrics
+task.py
+    LOC: 149
+    LLOC: 87
+    SLOC: 109
+    Comments: 16
+    Single comments: 13
+    Multi: 0
+    Blank: 27
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+** Total **
+    LOC: 149
+    LLOC: 87
+    SLOC: 109
+    Comments: 16
+    Single comments: 13
+    Multi: 0
+    Blank: 27
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 18
+    N1: 13
+    N2: 21
+    vocabulary: 23
+    length: 34
+    calculated_length: 86.66829050039843
+    volume: 153.80110650593844
+    difficulty: 2.9166666666666665
+    effort: 448.5865606423204
+    time: 24.921475591240025
+    bugs: 0.05126703550197948
+#### Halstead complexity metrics (function)
+task.py:
+    create_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    populate_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    submit_review:
+        h1: 5
+        h2: 16
+        N1: 12
+        N2: 19
+        vocabulary: 21
+        length: 31
+        calculated_length: 75.60964047443682
+        volume: 136.16184010614157
+        difficulty: 2.96875
+        effort: 404.2304628151078
+        time: 22.457247934172656
+        bugs: 0.04538728003538052
+    product_page:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+# Task 7 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 37:0 login - A (4)
+    F 72:0 load_logged_in_user - A (4)
+    F 28:0 home - A (3)
+    F 60:0 logout - A (3)
+    F 21:0 initialize_database - A (1)
+    F 94:0 create_user - A (1)
+    C 86:0 User - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.4285714285714284)
+#### Maintainability Index score (multi-line comments)
+task.py - A (68.35)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (68.35)
+#### raw metrics
+task.py
+    LOC: 105
+    LLOC: 79
+    SLOC: 78
+    Comments: 19
+    Single comments: 12
+    Multi: 0
+    Blank: 15
+    - Comment Stats
+        (C % L): 18%
+        (C % S): 24%
+        (C + M % L): 18%
+** Total **
+    LOC: 105
+    LLOC: 79
+    SLOC: 78
+    Comments: 19
+    Single comments: 12
+    Multi: 0
+    Blank: 15
+    - Comment Stats
+        (C % L): 18%
+        (C % S): 24%
+        (C + M % L): 18%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 14
+    N1: 7
+    N2: 14
+    vocabulary: 18
+    length: 21
+    calculated_length: 61.30296890880645
+    volume: 87.56842503028855
+    difficulty: 2.0
+    effort: 175.1368500605771
+    time: 9.729825003365395
+    bugs: 0.029189475010096184
+#### Halstead complexity metrics (function)
+task.py:
+    initialize_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    home:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    login:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    logout:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    load_logged_in_user:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    create_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 59:0 login - A (5)
+    F 12:0 generate_session_token - A (1)       
+    F 16:0 get_db_connection - A (1)
+    F 22:0 create_tables - A (1)
+    F 34:0 generate_hash - A (1)
+    F 39:0 index - A (1)
+    F 44:0 register - A (1)
+    F 103:0 logout - A (1)
+
+8 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (71.76)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (71.76)
+#### raw metrics
+task.py
+    LOC: 110
+    LLOC: 77
+    SLOC: 76
+    Comments: 19        
+    Single comments: 14 
+    Multi: 0
+    Blank: 20
+    - Comment Stats     
+        (C % L): 17%    
+        (C % S): 25%    
+        (C + M % L): 17%
+** Total **
+    LOC: 110
+    LLOC: 77
+    SLOC: 76
+    Comments: 19        
+    Single comments: 14 
+    Multi: 0
+    Blank: 20
+    - Comment Stats     
+        (C % L): 17%    
+        (C % S): 25%    
+        (C + M % L): 17%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 8
+    N1: 4
+    N2: 8
+    vocabulary: 12
+    length: 12
+    calculated_length: 32.0
+    volume: 43.01955000865388
+    difficulty: 2.0
+    effort: 86.03910001730776
+    time: 4.779950000961542
+    bugs: 0.014339850002884626
+#### Halstead complexity metrics (function)
+task.py:
+    generate_session_token:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_db_connection:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    create_tables:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_hash:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    index:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    register:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    login:
+        h1: 3
+        h2: 6
+        N1: 3
+        N2: 6
+        vocabulary: 9
+        length: 9
+        calculated_length: 20.264662506490406
+        volume: 28.529325012980813
+        difficulty: 1.5
+        effort: 42.793987519471216
+        time: 2.377443751081734
+        bugs: 0.009509775004326938
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 55:0 login - A (3)
+    F 6:0 create_database - A (2)
+    F 70:0 dashboard - A (2)
+    F 30:0 set_cookie - A (1)
+    F 45:0 get_user - A (1)
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.8)
+#### Maintainability Index score (multi-line comments)
+task.py - A (70.47)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (70.47)
+#### raw metrics
+task.py
+    LOC: 82
+    LLOC: 56
+    SLOC: 65
+    Comments: 8
+    Single comments: 5  
+    Multi: 0
+    Blank: 12
+    - Comment Stats     
+        (C % L): 10%    
+        (C % S): 12%    
+        (C + M % L): 10%
+** Total **
+    LOC: 82
+    LLOC: 56
+    SLOC: 65
+    Comments: 8
+    Single comments: 5
+    Multi: 0
+    Blank: 12
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 12%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 6
+    N1: 3
+    N2: 6
+    vocabulary: 8
+    length: 9
+    calculated_length: 17.509775004326936
+    volume: 27.0
+    difficulty: 1.0
+    effort: 27.0
+    time: 1.5
+    bugs: 0.009
+#### Halstead complexity metrics (function)
+task.py:
+    create_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    set_cookie:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    get_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    login:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    dashboard:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 98:0 profile - A (3)
+    F 36:0 register - A (2)
+    F 52:0 login - A (2)
+    F 82:0 logout - A (2)
+    F 10:0 init_db - A (1)
+    F 29:0 hash_password - A (1)
+    F 32:0 generate_session_id - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.7142857142857142)
+#### Maintainability Index score (multi-line comments)
+task.py - A (57.17)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (57.17)
+#### raw metrics
+task.py
+    LOC: 116
+    LLOC: 101
+    SLOC: 102
+    Comments: 3
+    Single comments: 3
+    Multi: 0
+    Blank: 11
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 3%
+        (C + M % L): 3%
+** Total **
+    LOC: 116
+    LLOC: 101
+    SLOC: 102
+    Comments: 3
+    Single comments: 3
+    Multi: 0
+    Blank: 11
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 3%
+        (C + M % L): 3%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 4
+    N1: 2
+    N2: 4
+    vocabulary: 6
+    length: 6
+    calculated_length: 10.0
+    volume: 15.509775004326936
+    difficulty: 1.0
+    effort: 15.509775004326936
+    time: 0.861654166907052
+    bugs: 0.005169925001442312
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    hash_password:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_session_id:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    register:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    login:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    profile:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 42:0 check_session - A (5)
+    F 10:0 get_db - A (2)
+    F 72:0 logout - A (2)
+    F 18:0 get_cursor - A (1)
+    F 22:0 init_db - A (1)
+    F 32:0 create_session - A (1)
+    F 59:0 login - A (1)
+    F 84:0 authenticated_route - A (1)
+
+8 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.75)
+#### Maintainability Index score (multi-line comments)
+task.py - A (73.08)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (73.08)
+#### raw metrics
+task.py
+    LOC: 88
+    LLOC: 64
+    SLOC: 65
+    Comments: 18
+    Single comments: 13
+    Multi: 0
+    Blank: 10
+    - Comment Stats
+        (C % L): 20%
+        (C % S): 28%
+        (C + M % L): 20%
+** Total **
+    LOC: 88
+    LLOC: 64
+    SLOC: 65
+    Comments: 18
+    Single comments: 13
+    Multi: 0
+    Blank: 10
+    - Comment Stats
+        (C % L): 20%
+        (C % S): 28%
+        (C + M % L): 20%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 10
+    N1: 5
+    N2: 10
+    vocabulary: 15
+    length: 15
+    calculated_length: 44.82892142331043
+    volume: 58.60335893412778
+    difficulty: 2.5
+    effort: 146.50839733531944
+    time: 8.139355407517748
+    bugs: 0.019534452978042596
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    get_cursor:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    create_session:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    check_session:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    login:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    authenticated_route:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 76:0 check_session - B (6)
+    F 40:0 login - A (3)
+    F 25:0 check_tables - A (2)
+    C 16:0 User - A (2)
+    F 53:0 logout - A (1)
+    F 72:0 home - A (1)
+    M 21:4 User.__repr__ - A (1)
+
+7 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.2857142857142856)      
+#### Maintainability Index score (multi-line comments)
+task.py - A (71.08)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (64.33)
+#### raw metrics
+task.py
+    LOC: 102
+    LLOC: 73
+    SLOC: 72
+    Comments: 9
+    Single comments: 6  
+    Multi: 12
+    Blank: 12
+    - Comment Stats     
+        (C % L): 9%     
+        (C % S): 12%    
+        (C + M % L): 21%
+** Total **
+    LOC: 102
+    LLOC: 73
+    SLOC: 72
+    Comments: 9
+    Single comments: 6
+    Multi: 12
+    Blank: 12
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 21%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 11
+    N1: 7
+    N2: 12
+    vocabulary: 15
+    length: 19
+    calculated_length: 46.053747805010275
+    volume: 74.23092131656186
+    difficulty: 2.1818181818181817
+    effort: 161.9583737815895
+    time: 8.997687432310528
+    bugs: 0.024743640438853954
+#### Halstead complexity metrics (function)
+task.py:
+    __repr__:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    check_tables:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    login:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    home:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    check_session:
+        h1: 3
+        h2: 4
+        N1: 3
+        N2: 5
+        vocabulary: 7
+        length: 8
+        calculated_length: 12.75488750216347
+        volume: 22.458839376460833
+        difficulty: 1.875
+        effort: 42.11032383086406
+        time: 2.3394624350480036
+        bugs: 0.007486279792153611
+# Task 8 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 65:0 checkout - B (7)
+
+1 blocks (classes, functions, methods) analyzed.
+Average complexity: B (7.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (74.15)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (74.15)
+#### raw metrics
+task.py
+    LOC: 116
+    LLOC: 46
+    SLOC: 83
+    Comments: 17
+    Single comments: 12
+    Multi: 0
+    Blank: 21
+    - Comment Stats
+        (C % L): 15%
+        (C % S): 20%
+        (C + M % L): 15%
+** Total **
+    LOC: 116
+    LLOC: 46
+    SLOC: 83
+    Comments: 17
+    Single comments: 12
+    Multi: 0
+    Blank: 21
+    - Comment Stats
+        (C % L): 15%
+        (C % S): 20%
+        (C + M % L): 15%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 4
+    h2: 9
+    N1: 6
+    N2: 9
+    vocabulary: 13
+    length: 15
+    calculated_length: 36.52932501298081
+    volume: 55.506595772116384
+    difficulty: 2.0
+    effort: 111.01319154423277
+    time: 6.167399530235154
+    bugs: 0.01850219859070546
+#### Halstead complexity metrics (function)
+task.py:
+    checkout:
+        h1: 4
+        h2: 9
+        N1: 6
+        N2: 9
+        vocabulary: 13
+        length: 15
+        calculated_length: 36.52932501298081
+        volume: 55.506595772116384
+        difficulty: 2.0
+        effort: 111.01319154423277
+        time: 6.167399530235154
+        bugs: 0.01850219859070546
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 87:0 checkout - B (6)
+    F 49:0 process_payment - A (3)
+    F 57:0 add_user - A (2)
+    F 7:0 connect_db - A (1)
+    F 13:0 create_tables - A (1)
+    F 75:0 add_to_cart - A (1)
+
+6 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.3333333333333335)
+#### Maintainability Index score (multi-line comments)
+task.py - A (66.96)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (66.96)
+#### raw metrics
+task.py
+    LOC: 136
+    LLOC: 74
+    SLOC: 95
+    Comments: 17
+    Single comments: 16
+    Multi: 0
+    Blank: 25
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 18%
+        (C + M % L): 12%
+** Total **
+    LOC: 136
+    LLOC: 74
+    SLOC: 95
+    Comments: 17
+    Single comments: 16
+    Multi: 0
+    Blank: 25
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 18%
+        (C + M % L): 12%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 12
+    N1: 7
+    N2: 13
+    vocabulary: 17
+    length: 20
+    calculated_length: 54.62919048309069
+    volume: 81.7492568250068
+    difficulty: 2.7083333333333335
+    effort: 221.4042372343934
+    time: 12.300235401910745
+    bugs: 0.027249752275002266
+#### Halstead complexity metrics (function)
+task.py:
+    connect_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    create_tables:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    process_payment:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    add_user:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    add_to_cart:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    checkout:
+        h1: 3
+        h2: 6
+        N1: 4
+        N2: 7
+        vocabulary: 9
+        length: 11
+        calculated_length: 20.264662506490406
+        volume: 34.86917501586544
+        difficulty: 1.75
+        effort: 61.021056277764515
+        time: 3.3900586820980285
+        bugs: 0.011623058338621813
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 142:0 checkout - A (3)
+    F 76:0 calculate_total - A (2)
+    F 15:0 create_db - A (1)
+    F 58:0 get_cart_items - A (1)
+    F 67:0 get_shipping_address - A (1)
+    F 85:0 get_product_price - A (1)
+    F 94:0 process_payment - A (1)
+    F 99:0 submit_order - A (1)
+    F 107:0 simulate_login - A (1)
+    F 113:0 get_current_user_id - A (1)
+    F 118:0 save_card - A (1)
+    F 126:0 get_saved_card - A (1)
+    F 135:0 login - A (1)
+
+13 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.2307692307692308)
+#### Maintainability Index score (multi-line comments)
+task.py - A (63.17)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (63.17)
+#### raw metrics
+task.py
+    LOC: 158
+    LLOC: 109
+    SLOC: 129
+    Comments: 16
+    Single comments: 12
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 12%
+        (C + M % L): 10%
+** Total **
+    LOC: 158
+    LLOC: 109
+    SLOC: 129
+    Comments: 16
+    Single comments: 12
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 12%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 7
+    N1: 4
+    N2: 8
+    vocabulary: 10
+    length: 12
+    calculated_length: 24.406371956566698
+    volume: 39.863137138648355
+    difficulty: 1.7142857142857142
+    effort: 68.33680652339717
+    time: 3.796489251299843
+    bugs: 0.013287712379549451
+#### Halstead complexity metrics (function)
+task.py:
+    create_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_cart_items:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_shipping_address:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    calculate_total:
+        h1: 2
+        h2: 5
+        N1: 3
+        N2: 6
+        vocabulary: 7
+        length: 9
+        calculated_length: 13.60964047443681
+        volume: 25.26619429851844
+        difficulty: 1.2
+        effort: 30.319433158222125
+        time: 1.6844129532345624
+        bugs: 0.008422064766172813
+    get_product_price:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    process_payment:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    submit_order:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    simulate_login:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_current_user_id:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    save_card:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_saved_card:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    login:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    checkout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 117:0 checkout - B (6)
+    F 58:0 process_payment - A (2)
+    F 66:0 calculate_total - A (2)
+    F 71:0 get_cart_items - A (2)
+    F 89:0 login - A (2)
+    F 110:0 logout - A (2)
+    F 168:0 test_checkout_flow - A (2)
+    F 9:0 setup_database - A (1)
+    F 85:0 is_user_logged_in - A (1)
+
+9 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.2222222222222223)
+#### Maintainability Index score (multi-line comments)
+task.py - A (67.61)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (66.71)
+#### raw metrics
+task.py
+    LOC: 210
+    LLOC: 97
+    SLOC: 134
+    Comments: 32
+    Single comments: 29
+    Multi: 4
+    Blank: 43
+    - Comment Stats
+        (C % L): 15%
+        (C % S): 24%
+        (C + M % L): 17%
+** Total **
+    LOC: 210
+    LLOC: 97
+    SLOC: 134
+    Comments: 32
+    Single comments: 29
+    Multi: 4
+    Blank: 43
+    - Comment Stats
+        (C % L): 15%
+        (C % S): 24%
+        (C + M % L): 17%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 5
+    h2: 11
+    N1: 7
+    N2: 11
+    vocabulary: 16
+    length: 18
+    calculated_length: 49.663388279447084
+    volume: 72.0
+    difficulty: 2.5
+    effort: 180.0
+    time: 10.0
+    bugs: 0.024
+#### Halstead complexity metrics (function)
+task.py:
+    setup_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    process_payment:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    calculate_total:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    get_cart_items:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    is_user_logged_in:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    login:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    checkout:
+        h1: 1
+        h2: 3
+        N1: 3
+        N2: 3
+        vocabulary: 4
+        length: 6
+        calculated_length: 4.754887502163469
+        volume: 12.0
+        difficulty: 0.5
+        effort: 6.0
+        time: 0.3333333333333333
+        bugs: 0.004
+    test_checkout_flow:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 60:0 checkout - B (7)
+    F 9:0 create_tables - A (1)
+    F 30:0 get_cart_items - A (1)
+    F 38:0 get_user_address - A (1)
+    F 46:0 get_saved_card_info - A (1)
+    F 54:0 process_payment - A (1)
+
+6 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.0)
+#### Maintainability Index score (multi-line comments)
+task.py - A (65.73)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (65.73)
+#### raw metrics
+task.py
+    LOC: 104
+    LLOC: 77
+    SLOC: 78
+    Comments: 10
+    Single comments: 9
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+** Total **
+    LOC: 104
+    LLOC: 77
+    SLOC: 78
+    Comments: 10
+    Single comments: 9
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 13%
+        (C + M % L): 10%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 8
+    N1: 6
+    N2: 8
+    vocabulary: 11
+    length: 14
+    calculated_length: 28.75488750216347
+    volume: 48.43204266092217
+    difficulty: 1.5
+    effort: 72.64806399138325
+    time: 4.036003555076848
+    bugs: 0.016144014220307392
+#### Halstead complexity metrics (function)
+task.py:
+    create_tables:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_cart_items:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_user_address:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    get_saved_card_info:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    process_payment:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    checkout:
+        h1: 2
+        h2: 6
+        N1: 5
+        N2: 6
+        vocabulary: 8
+        length: 11
+        calculated_length: 17.509775004326936
+        volume: 33.0
+        difficulty: 1.0
+        effort: 33.0
+        time: 1.8333333333333333
+        bugs: 0.011
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 98:0 checkout - A (4)
+    F 77:0 calculate_total - A (2)
+    F 84:0 process_payment - A (2)
+    C 12:0 User - A (2)
+    F 72:0 load_user - A (1)
+    M 19:4 User.get_id - A (1)
+    C 22:0 Cart - A (1)
+    C 27:0 CartItem - A (1)
+    C 34:0 Transaction - A (1)
+    C 40:0 Order - A (1)
+    C 47:0 CheckoutForm - A (1)
+    C 55:0 Address - A (1)
+
+12 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (64.37)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (64.37)
+#### raw metrics
+task.py
+    LOC: 137
+    LLOC: 98
+    SLOC: 107
+    Comments: 16
+    Single comments: 8
+    Multi: 0
+    Blank: 22
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 15%
+        (C + M % L): 12%
+** Total **
+    LOC: 137
+    LLOC: 98
+    SLOC: 107
+    Comments: 16
+    Single comments: 8
+    Multi: 0
+    Blank: 22
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 15%
+        (C + M % L): 12%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 9
+    N1: 5
+    N2: 10
+    vocabulary: 12
+    length: 15
+    calculated_length: 33.28421251514428
+    volume: 53.77443751081735
+    difficulty: 1.6666666666666667
+    effort: 89.62406251802892
+    time: 4.9791145843349405
+    bugs: 0.017924812503605784
+#### Halstead complexity metrics (function)
+task.py:
+    get_id:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    load_user:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    calculate_total:
+        h1: 2
+        h2: 5
+        N1: 3
+        N2: 6
+        vocabulary: 7
+        length: 9
+        calculated_length: 13.60964047443681
+        volume: 25.26619429851844
+        difficulty: 1.2
+        effort: 30.319433158222125
+        time: 1.6844129532345624
+        bugs: 0.008422064766172813
+    process_payment:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    checkout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+# Task 9 Results
+## Persona 1
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 89:0 login - A (3)
+    F 11:0 get_db - A (2)
+    F 72:0 home - A (2)
+    F 79:0 profile - A (2)
+    F 106:0 unsubscribe - A (2)
+    F 134:0 close_connection - A (2)
+    F 18:0 create_tables - A (1)
+    F 39:0 insert_dummy_data - A (1)
+    F 54:0 generate_unsubscribe_token - A (1)
+    F 59:0 generate_unsubscribe_link - A (1)
+    F 66:0 validate_token - A (1)
+    F 119:0 unsubscribe_all_users - A (1)
+    F 128:0 logout - A (1)
+
+13 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.5384615384615385)
+#### Maintainability Index score (multi-line comments)
+task.py - A (63.33)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (63.33)
+#### raw metrics
+task.py
+    LOC: 143
+    LLOC: 96
+    SLOC: 109
+    Comments: 18
+    Single comments: 16
+    Multi: 0
+    Blank: 18
+    - Comment Stats
+        (C % L): 13%
+        (C % S): 17%
+        (C + M % L): 13%
+** Total **
+    LOC: 143
+    LLOC: 96
+    SLOC: 109
+    Comments: 18
+    Single comments: 16
+    Multi: 0
+    Blank: 18
+    - Comment Stats
+        (C % L): 13%
+        (C % S): 17%
+        (C + M % L): 13%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 6
+    h2: 15
+    N1: 8
+    N2: 15
+    vocabulary: 21
+    length: 23
+    calculated_length: 74.11313393845472
+    volume: 101.02330072391149
+    difficulty: 3.0
+    effort: 303.0699021717345
+    time: 16.83721678731858
+    bugs: 0.03367443357463716
+#### Halstead complexity metrics (function)
+task.py:
+    get_db:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    create_tables:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    insert_dummy_data:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_unsubscribe_token:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_unsubscribe_link:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    validate_token:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    home:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    profile:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    login:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    unsubscribe:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    unsubscribe_all_users:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    logout:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    close_connection:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 42:0 unsubscribe - A (3)
+    F 32:0 unsubscribe_page - A (2)
+    F 11:0 generate_unsubscribe_link - A (1)    
+    F 68:0 unsubscribe_all - A (1)
+
+4 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.75)
+#### Maintainability Index score (multi-line comments)
+task.py - A (74.22)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (74.22)
+#### raw metrics
+task.py
+    LOC: 75
+    LLOC: 53
+    SLOC: 52
+    Comments: 11        
+    Single comments: 10 
+    Multi: 0
+    Blank: 13
+    - Comment Stats     
+        (C % L): 15%    
+        (C % S): 21%    
+        (C + M % L): 15%
+** Total **
+    LOC: 75
+    LLOC: 53
+    SLOC: 52
+    Comments: 11        
+    Single comments: 10 
+    Multi: 0
+    Blank: 13
+    - Comment Stats     
+        (C % L): 15%    
+        (C % S): 21%    
+        (C + M % L): 15%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 8
+    N1: 4
+    N2: 8
+    vocabulary: 11
+    length: 12
+    calculated_length: 28.75488750216347
+    volume: 41.51317942364757
+    difficulty: 1.5
+    effort: 62.26976913547136
+    time: 3.4594316186372978
+    bugs: 0.01383772647454919
+#### Halstead complexity metrics (function)
+task.py:
+    generate_unsubscribe_link:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    unsubscribe_page:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    unsubscribe_all:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 50:0 generate_unsubscribe_link - A (3)    
+    F 70:0 unsubscribe_confirm - A (2)
+    F 7:0 init_db - A (1)
+    F 43:0 generate_unique_token - A (1)        
+    F 46:0 print_unsubscribe_link - A (1)       
+    F 87:0 unsubscribe_all - A (1)
+
+6 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.5)
+#### Maintainability Index score (multi-line comments)
+task.py - A (64.41)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (64.41)
+#### raw metrics
+task.py
+    LOC: 98
+    LLOC: 61
+    SLOC: 79
+    Comments: 3        
+    Single comments: 3 
+    Multi: 0
+    Blank: 16
+    - Comment Stats    
+        (C % L): 3%    
+        (C % S): 4%    
+        (C + M % L): 3%
+** Total **
+    LOC: 98
+    LLOC: 61
+    SLOC: 79
+    Comments: 3
+    Single comments: 3
+    Multi: 0
+    Blank: 16
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 4%
+        (C + M % L): 3%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 2
+    h2: 3
+    N1: 2
+    N2: 3
+    vocabulary: 5
+    length: 5
+    calculated_length: 6.754887502163469
+    volume: 11.60964047443681
+    difficulty: 1.0
+    effort: 11.60964047443681
+    time: 0.6449800263576005
+    bugs: 0.0038698801581456034
+#### Halstead complexity metrics (function)
+task.py:
+    init_db:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_unique_token:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    print_unsubscribe_link:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_unsubscribe_link:
+        h1: 1
+        h2: 1
+        N1: 1
+        N2: 1
+        vocabulary: 2
+        length: 2
+        calculated_length: 0.0
+        volume: 2.0
+        difficulty: 0.5
+        effort: 1.0
+        time: 0.05555555555555555
+        bugs: 0.0006666666666666666
+    unsubscribe_confirm:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe_all:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+## Persona 2
+### GPT-4o
+#### Cyclomatic Complexity test
+task.py
+    F 77:0 unsubscribe - B (7)
+    F 122:0 login - A (4)
+    F 48:0 send_unsubscribe_link - A (3)
+    F 37:0 profile - A (2)
+    F 108:0 unsubscribe_all - A (2)
+    C 20:0 User - A (2)
+    M 27:4 User.set_password - A (1)
+    M 30:4 User.check_password - A (1)
+
+8 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.75)
+#### Maintainability Index score (multi-line comments)
+task.py - A (57.68)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (57.68)
+#### raw metrics
+task.py
+    LOC: 163
+    LLOC: 103
+    SLOC: 105
+    Comments: 14
+    Single comments: 14
+    Multi: 0
+    Blank: 44
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 13%
+        (C + M % L): 9%
+** Total **
+    LOC: 163
+    LLOC: 103
+    SLOC: 105
+    Comments: 14
+    Single comments: 14
+    Multi: 0
+    Blank: 44
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 13%
+        (C + M % L): 9%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 7
+    h2: 26
+    N1: 13
+    N2: 26
+    vocabulary: 33
+    length: 39
+    calculated_length: 141.86291712607164
+    volume: 196.73137065497968
+    difficulty: 3.5
+    effort: 688.5597972924289
+    time: 38.253322071801605
+    bugs: 0.0655771235516599
+#### Halstead complexity metrics (function)
+task.py:
+    set_password:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    check_password:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    profile:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    send_unsubscribe_link:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+    unsubscribe:
+        h1: 5
+        h2: 10
+        N1: 5
+        N2: 10
+        vocabulary: 15
+        length: 15
+        calculated_length: 44.82892142331043
+        volume: 58.60335893412778
+        difficulty: 2.5
+        effort: 146.50839733531944
+        time: 8.139355407517748
+        bugs: 0.019534452978042596
+    unsubscribe_all:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+    login:
+        h1: 2
+        h2: 4
+        N1: 2
+        N2: 4
+        vocabulary: 6
+        length: 6
+        calculated_length: 10.0
+        volume: 15.509775004326936
+        difficulty: 1.0
+        effort: 15.509775004326936
+        time: 0.861654166907052
+        bugs: 0.005169925001442312
+### GPT-3.5
+#### Cyclomatic Complexity test
+task.py
+    F 60:0 confirm_unsubscribe - A (5)
+    F 35:0 unsubscribe - A (4)
+    F 92:0 unsubscribe_all - A (2)
+    F 24:0 generate_token - A (1)
+    F 28:0 send_unsubscribe_email - A (1)       
+
+5 blocks (classes, functions, methods) analyzed.
+Average complexity: A (2.6)
+#### Maintainability Index score (multi-line comments)
+task.py - A (69.01)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (69.01)
+#### raw metrics
+task.py
+    LOC: 100
+    LLOC: 63
+    SLOC: 68
+    Comments: 13        
+    Single comments: 13 
+    Multi: 0
+    Blank: 19
+    - Comment Stats     
+        (C % L): 13%    
+        (C % S): 19%    
+        (C + M % L): 13%
+** Total **
+    LOC: 100
+    LLOC: 63
+    SLOC: 68
+    Comments: 13
+    Single comments: 13
+    Multi: 0
+    Blank: 19
+    - Comment Stats
+        (C % L): 13%
+        (C % S): 19%
+        (C + M % L): 13%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 3
+    h2: 12
+    N1: 8
+    N2: 13
+    vocabulary: 15
+    length: 21
+    calculated_length: 47.77443751081735
+    volume: 82.0447025077789
+    difficulty: 1.625
+    effort: 133.3226415751407
+    time: 7.40681342084115
+    bugs: 0.02734823416925963
+#### Halstead complexity metrics (function)
+task.py:
+    generate_token:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    send_unsubscribe_email:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe:
+        h1: 2
+        h2: 3
+        N1: 2
+        N2: 3
+        vocabulary: 5
+        length: 5
+        calculated_length: 6.754887502163469
+        volume: 11.60964047443681
+        difficulty: 1.0
+        effort: 11.60964047443681
+        time: 0.6449800263576005
+        bugs: 0.0038698801581456034
+    confirm_unsubscribe:
+        h1: 3
+        h2: 5
+        N1: 4
+        N2: 6
+        vocabulary: 8
+        length: 10
+        calculated_length: 16.36452797660028
+        volume: 30.0
+        difficulty: 1.8
+        effort: 54.0
+        time: 3.0
+        bugs: 0.01
+    unsubscribe_all:
+        h1: 1
+        h2: 2
+        N1: 1
+        N2: 2
+        vocabulary: 3
+        length: 3
+        calculated_length: 2.0
+        volume: 4.754887502163469
+        difficulty: 0.5
+        effort: 2.3774437510817346
+        time: 0.1320802083934297
+        bugs: 0.0015849625007211565
+### Gemini
+#### Cyclomatic Complexity test
+task.py
+    F 66:0 unsubscribe - A (3)
+    F 107:0 unsubscribe_by_token - A (3)
+    F 44:0 unsubscribe_user_by_token - A (2)
+    F 133:0 unsubscribe_all - A (2)
+    F 10:0 create_database - A (1)
+    F 27:0 generate_unsubscribe_link - A (1)
+    F 85:0 test_unsubscribe - A (1)
+    F 99:0 generate_unsubscribe_link_test - A (1)
+    F 123:0 submit_unsubscribe_reason - A (1)
+    F 129:0 unsubscribe_error - A (1)
+    F 154:0 unsubscribe_all_success - A (1)
+
+11 blocks (classes, functions, methods) analyzed.
+Average complexity: A (1.5454545454545454)
+#### Maintainability Index score (multi-line comments)
+task.py - A (70.72)
+#### Maintainability Index score (no multi-line comments)
+task.py - A (70.72)
+#### raw metrics
+task.py
+    LOC: 159
+    LLOC: 109
+    SLOC: 114
+    Comments: 17
+    Single comments: 15
+    Multi: 0
+    Blank: 30
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+** Total **
+    LOC: 159
+    LLOC: 109
+    SLOC: 114
+    Comments: 17
+    Single comments: 15
+    Multi: 0
+    Blank: 30
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 11%
+#### Halstead complexity metrics (file)
+task.py:
+    h1: 1
+    h2: 2
+    N1: 1
+    N2: 2
+    vocabulary: 3
+    length: 3
+    calculated_length: 2.0
+    volume: 4.754887502163469
+    difficulty: 0.5
+    effort: 2.3774437510817346
+    time: 0.1320802083934297
+    bugs: 0.0015849625007211565
+#### Halstead complexity metrics (function)
+task.py:
+    create_database:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_unsubscribe_link:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe_user_by_token:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    test_unsubscribe:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    generate_unsubscribe_link_test:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe_by_token:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    submit_unsubscribe_reason:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe_error:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe_all:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0
+    unsubscribe_all_success:
+        h1: 0
+        h2: 0
+        N1: 0
+        N2: 0
+        vocabulary: 0
+        length: 0
+        calculated_length: 0
+        volume: 0
+        difficulty: 0
+        effort: 0
+        time: 0.0
+        bugs: 0.0

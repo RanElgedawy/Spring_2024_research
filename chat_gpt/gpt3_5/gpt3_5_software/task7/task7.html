@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Authentication</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form id="registerForm">
+        Username: <input type="text" id="registerUsername" required><br>
+        Password: <input type="password" id="registerPassword" required><br>
+        <input type="submit" value="Register">
+    </form>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+        Username: <input type="text" id="loginUsername" required><br>
+        Password: <input type="password" id="loginPassword" required><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <button id="logoutBtn" style="display:none;">Logout</button>
+
+    <script>
+        // Function to handle registration
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('registerUsername').value;
+            var password = document.getElementById('registerPassword').value;
+            fetch('/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password
+                })
+            }).then(response => response.json())
+            .then(data => {
+                alert(data.message);
+            });
+        });
+
+        // Function to handle login
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('loginUsername').value;
+            var password = document.getElementById('loginPassword').value;
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password
+                })
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById('logoutBtn').style.display = 'inline-block';
+                    alert('Login successful');
+                } else {
+                    alert('Invalid credentials');
+                }
+            });
+        });
+
+        // Function to handle logout
+        document.getElementById('logoutBtn').addEventListener('click', function() {
+            fetch('/logout', {
+                method: 'GET'
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById('logoutBtn').style.display = 'none';
+                    alert('Logged out successfully');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

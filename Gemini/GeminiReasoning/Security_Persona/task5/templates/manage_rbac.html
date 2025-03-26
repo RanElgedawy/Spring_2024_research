@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Manage Roles and Permissions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Roles and Permissions</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <h2>Users and Their Roles</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Username</th>
+                    <th>Roles</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for user in users %}
+                    <tr>
+                        <td>{{ user[0] }}</td>
+                        <td>{{ user[1] }}</td>
+                        <td>
+                            {% if user[0] in user_roles %}
+                                {{ ', '.join(user_roles[user[0]]) }}
+                            {% else %}
+                                No roles assigned
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Roles and Their Permissions</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Role ID</th>
+                    <th>Role Name</th>
+                    <th>Permissions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for role in roles %}
+                    <tr>
+                        <td>{{ role[0] }}</td>
+                        <td>{{ role[1] }}</td>
+                        <td>
+                            {% if role[0] in role_permissions %}
+                                {{ ', '.join(role_permissions[role[0]]) }}
+                            {% else %}
+                                No permissions assigned
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Assign Role to User</h2>
+        <form method="POST" action="{{ url_for('assign_role') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.user_id.label }} {{ form.user_id(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.role_id.label }} {{ form.role_id(class="form-control") }}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+
+        <p><a href="{{ url_for('admin_products') }}">Back to Product List</a> | <a href="{{ url_for('index') }}">Home</a></p>
+    </div>
+</body>
+</html>

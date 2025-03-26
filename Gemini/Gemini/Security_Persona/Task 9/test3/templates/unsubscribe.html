@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <h1>Unsubscribe from Newsletter</h1>
+
+    <form method="POST" action="/unsubscribe/{{ email }}/{{ token }}">
+        <label for="reason">Reason for Unsubscribing:</label><br>
+        <textarea id="reason" name="unsubscribe_reason"></textarea><br><br>
+
+        <input type="submit" value="Unsubscribe">
+    </form>
+</body>
+</html>

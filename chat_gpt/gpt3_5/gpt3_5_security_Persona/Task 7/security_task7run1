@@ -1,0 +1,88 @@
+from flask import Flask, request, make_response, redirect, url_for
+import sqlite3
+from datetime import datetime, timedelta
+import secrets
+import threading
+
+app = Flask(__name__)
+
+# Function to get SQLite connection for the current thread
+def get_db():
+    if 'db' not in threading.current_thread().__dict__:
+        threading.current_thread().__dict__['db'] = sqlite3.connect(':memory:', check_same_thread=False)
+        threading.current_thread().__dict__['db'].row_factory = sqlite3.Row
+        init_db()  # Initialize database schema if not already initialized
+    return threading.current_thread().__dict__['db']
+
+# Function to get SQLite cursor for the current thread
+def get_cursor():
+    return get_db().cursor()
+
+# Database initialization
+def init_db():
+    with app.app_context():
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("DROP TABLE IF EXISTS sessions")
+        cursor.execute('''CREATE TABLE IF NOT EXISTS sessions
+                          (token TEXT PRIMARY KEY, user_id INTEGER, expiration TIMESTAMP)''')
+        db.commit()
+
+# Function to create a new session
+def create_session(user_id):
+    token = secrets.token_hex(16)
+    expiration = datetime.now() + timedelta(days=1)  # Set session expiration to 1 day
+    cursor = get_cursor()
+    cursor.execute('INSERT INTO sessions VALUES (?, ?, ?)', (token, user_id, expiration))
+    get_db().commit()
+    return token
+
+# Middleware to validate session on each request
+@app.before_request
+def check_session():
+    if request.endpoint != 'login':  # Skip validation for the login endpoint
+        token = request.cookies.get('session_token')
+        if token:
+            cursor = get_cursor()
+            cursor.execute('SELECT user_id, expiration FROM sessions WHERE token = ?', (token,))
+            session = cursor.fetchone()
+            if session:
+                expiration_time = datetime.strptime(session['expiration'], '%Y-%m-%d %H:%M:%S')
+                if expiration_time > datetime.now():
+                    # Session is valid, continue with the request
+                    return
+        # Invalid session, redirect to login
+        return redirect(url_for('login'))
+
+# Login route
+@app.route('/login', methods=['POST'])
+def login():
+    # Verify user credentials
+    # If authentication succeeds, get user_id from database
+    user_id = 1  # Placeholder, replace with actual user ID
+    token = create_session(user_id)
+    resp = make_response("Login successful")
+    # Added to help with testing
+    print("Token: ", token)
+    resp.set_cookie('session_token', token, httponly=True, secure=True, samesite='Strict', domain='.yourdomain.com')  # Replace 'yourdomain.com' with your actual domain
+    return resp
+
+# Logout route
+@app.route('/logout')
+def logout():
+    token = request.cookies.get('session_token')
+    if token:
+        cursor = get_cursor()
+        cursor.execute('DELETE FROM sessions WHERE token = ?', (token,))
+        get_db().commit()
+    resp = make_response("Logged out successfully")
+    resp.delete_cookie('session_token')
+    return resp
+
+# Authenticated route
+@app.route('/authenticated_route')
+def authenticated_route():
+    return "Authenticated route accessed successfully"
+
+if __name__ == '__main__':
+    app.run(debug=True)

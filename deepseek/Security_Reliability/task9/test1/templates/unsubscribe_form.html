@@ -1,0 +1,19 @@
+<!-- templates/unsubscribe_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsubscribe</title>
+</head>
+<body>
+    <h1>Unsubscribe from Newsletter</h1>
+    <form method="POST">
+        <input type="hidden" name="token" value="{{ token }}">
+        
+        <p>Please tell us why you're unsubscribing:</p>
+        <textarea name="reason" required style="width: 300px; height: 100px;"></textarea>
+        
+        <br><br>
+        <button type="submit">Confirm Unsubscribe</button>
+    </form>
+</body>
+</html>

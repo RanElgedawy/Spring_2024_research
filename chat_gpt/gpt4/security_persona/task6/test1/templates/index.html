@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Reviews</title>
+</head>
+<body>
+    <h1>Product Reviews</h1>
+    <ul>
+        {% for review in reviews %}
+            <li>
+                <strong>Rating:</strong> {{ review.rating }}<br>
+                <strong>Review:</strong> {{ review.text }}
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_review', product_id=1) }}">Add a Review for Product 1</a>
+</body>
+</html>

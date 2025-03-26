@@ -1,0 +1,17 @@
+
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS unsubscriptions;
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT UNIQUE NOT NULL,
+    subscribed BOOLEAN NOT NULL DEFAULT 1
+);
+
+CREATE TABLE unsubscriptions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER NOT NULL,
+    reason TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY(user_id) REFERENCES users(id)
+);

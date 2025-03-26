@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Payment Cards</title>
+</head>
+<body>
+    <h1>Stored Payment Cards</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Card Number</th>
+                <th>Expiry Date</th>
+                <th>Name on Card</th>
+                <th>Billing ZIP Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for card in cards %}
+            <tr>
+                <td>{{ card[0] }}</td>
+                <td>{{ card[1] }}</td>
+                <td>{{ card[2] }}</td>
+                <td>{{ card[3] }}</td>
+                <td>{{ card[4] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

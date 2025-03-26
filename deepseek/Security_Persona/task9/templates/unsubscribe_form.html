@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsubscribe from Newsletter</title>
+    <style>
+        .unsubscribe-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .reason-options { margin: 1rem 0; }
+        .reason-option { margin: 0.5rem 0; }
+        textarea { width: 100%; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+    <div class="unsubscribe-container">
+        <h2>We're sorry to see you go</h2>
+        <form method="POST">
+            <p>Please help us improve by sharing your reason for unsubscribing:</p>
+            
+            <div class="reason-options">
+                <div class="reason-option">
+                    <input type="radio" name="reason_type" id="too_many_emails" value="too_many_emails">
+                    <label for="too_many_emails">Too many emails</label>
+                </div>
+                
+                <div class="reason-option">
+                    <input type="radio" name="reason_type" id="irrelevant_content" value="irrelevant_content">
+                    <label for="irrelevant_content">Content not relevant</label>
+                </div>
+                
+                <div class="reason-option">
+                    <input type="radio" name="reason_type" id="other" value="other">
+                    <label for="other">Other (please specify below)</label>
+                </div>
+            </div>
+
+            <textarea name="custom_reason" 
+                      rows="4" 
+                      placeholder="Optional additional comments..."
+                      id="customReasonTextarea"
+                      disabled></textarea>
+
+            <button type="submit" class="btn-unsubscribe">Confirm Unsubscribe</button>
+        </form>
+    </div>
+
+    <script>
+        // Enable textarea when "Other" is selected
+        document.querySelectorAll('input[name="reason_type"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                const textarea = document.getElementById('customReasonTextarea');
+                textarea.disabled = e.target.value !== 'other';
+                if (!textarea.disabled) textarea.focus();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Review</title>
+</head>
+<body>
+    <h1>Submit Review</h1>
+    <form action="/submit_review" method="POST">
+        <label for="product_id">Product ID:</label>
+        <input type="text" name="product_id" id="product_id" required><br>
+        <label for="user_id">User ID:</label>
+        <input type="text" name="user_id" id="user_id" required><br>
+        <label for="rating">Rating (1 to 5):</label>
+        <input type="number" name="rating" id="rating" min="1" max="5" required><br>
+        <label for="review_text">Review:</label><br>
+        <textarea name="review_text" id="review_text" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Submit Review</button>
+    </form>
+</body>
+</html>

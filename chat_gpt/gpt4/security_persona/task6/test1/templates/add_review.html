@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Review</title>
+</head>
+<body>
+    <h1>Add a Review</h1>
+    <form method="POST" action="{{ url_for('add_review', product_id=1) }}">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.rating.label }}<br>
+            {{ form.rating(size=32) }}
+        </p>
+        <p>
+            {{ form.text.label }}<br>
+            {{ form.text(rows=4, cols=40) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Profile</h1>
+    <p>Welcome, {{ user.email }}!</p>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <p>Newsletter Subscription Status: {{ subscribed_status }}</p>
+    {% if subscribed_status == "Subscribed" %}
+        <p><a href="{{ url_for('request_unsubscribe') }}">Unsubscribe</a></p>
+    {% endif %}
+    {% if session['user_id'] == 1 %}
+    <h2>Admin Actions</h2>
+    <form method="POST" action="{{ url_for('unsubscribe_all') }}" onsubmit="return confirm('Are you sure you want to unsubscribe ALL users from the newsletter? This action is irreversible.');">
+        <button type="submit">Unsubscribe All Users</button>
+    </form>
+    {% endif %}
+    <p><a href="{{ url_for('logout') }}">Logout</a></p>
+    <p><a href="{{ url_for('index') }}">Home</a></p>
+</body>
+</html>

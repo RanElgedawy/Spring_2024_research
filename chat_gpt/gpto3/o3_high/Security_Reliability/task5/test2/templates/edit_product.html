@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Product</title>
+  </head>
+  <body>
+    <h1>Edit Product</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+        {% for category, message in messages %}
+          <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    <form method="post" action="{{ url_for('edit_product', product_id=product.id) }}">
+      <label>Name:</label>
+      <input type="text" name="name" value="{{ product.name }}" required><br>
+      <label>Description:</label>
+      <textarea name="description">{{ product.description }}</textarea><br>
+      <label>Price:</label>
+      <input type="text" name="price" value="{{ product.price }}" required><br>
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button type="submit">Update Product</button>
+    </form>
+    <p><a href="{{ url_for('admin_products') }}">Back to Product Management</a></p>
+  </body>
+</html>

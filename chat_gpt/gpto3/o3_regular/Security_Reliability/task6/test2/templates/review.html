@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>Submit Review</title>
+</head>
+<body>
+  <h1>Submit a Review for Product {{ product_id }}</h1>
+  <form method="POST">
+    {{ form.hidden_tag() }}
+    <p>
+      {{ form.rating.label }}<br>
+      {{ form.rating(size=5) }}
+    </p>
+    <p>
+      {{ form.text.label }}<br>
+      {{ form.text(rows=4, cols=40) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+  </form>
+  <a href="{{ url_for('reviews', product_id=product_id) }}">View Reviews</a>
+</body>
+</html>

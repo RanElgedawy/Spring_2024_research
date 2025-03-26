@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Payment Cards</title>
+</head>
+<body>
+    <h1>My Payment Cards</h1>
+    {% if cards %}
+    <table>
+        <thead>
+            <tr>
+                <th>Cardholder Name</th>
+                <th>Card Number (Last 4 Digits)</th>
+                <th>Expiry</th>
+                <th>Billing Zip</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for card in cards %}
+            <tr>
+                <td>{{ card.cardholder_name }}</td>
+                <td>****-****-****-{{ card.card_number[-4:] }}</td>
+                <td>{{ card.expiry_month }}/{{ card.expiry_year }}</td>
+                <td>{{ card.billing_zip }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No payment cards have been added yet.</p>
+    {% endif %}
+    <p><a href="{{ url_for('add_card') }}">Add New Card</a></p>
+    <p><a href="{{ url_for('index') }}">Back to Homepage</a></p>
+</body>
+</html>

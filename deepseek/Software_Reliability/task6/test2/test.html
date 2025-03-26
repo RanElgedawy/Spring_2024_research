@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Review Tester</title>
+    <style>
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .form-section { margin-bottom: 30px; border: 1px solid #ccc; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, textarea { width: 100%; padding: 8px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Review System Tester</h1>
+        
+        <!-- Purchase Simulator -->
+        <div class="form-section">
+            <h2>Simulate Purchase (Test Only)</h2>
+            <div class="form-group">
+                <label>User ID: <input type="number" id="purchaseUserId"></label>
+            </div>
+            <div class="form-group">
+                <label>Product ID: <input type="number" id="purchaseProductId"></label>
+            </div>
+            <button onclick="simulatePurchase()">Record Purchase</button>
+        </div>
+
+        <!-- Review Submission -->
+        <div class="form-section">
+            <h2>Submit Review</h2>
+            <div class="form-group">
+                <label>User ID: <input type="number" id="reviewUserId"></label>
+            </div>
+            <div class="form-group">
+                <label>Product ID: <input type="number" id="reviewProductId"></label>
+            </div>
+            <div class="form-group">
+                <label>Review Text: <textarea id="reviewText"></textarea></label>
+            </div>
+            <div class="form-group">
+                <label>Score (1-5): <input type="number" id="reviewScore" min="1" max="5"></label>
+            </div>
+            <button onclick="submitReview()">Submit Review</button>
+        </div>
+
+        <!-- Review Display -->
+        <div class="form-section">
+            <h2>Check Product Reviews</h2>
+            <div class="form-group">
+                <label>Product ID: <input type="number" id="checkProductId"></label>
+            </div>
+            <button onclick="getReviews()">Get Reviews</button>
+            <div id="reviewsList" style="margin-top: 15px;"></div>
+        </div>
+    </div>
+
+    <script>
+        async function simulatePurchase() {
+            const response = await fetch('/test/add_purchase', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    user_id: document.getElementById('purchaseUserId').value,
+                    product_id: document.getElementById('purchaseProductId').value
+                })
+            });
+            alert(await response.text());
+        }
+
+        async function submitReview() {
+            const response = await fetch('/submit_review', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    user_id: document.getElementById('reviewUserId').value,
+                    product_id: document.getElementById('reviewProductId').value,
+                    review_text: document.getElementById('reviewText').value,
+                    review_score: document.getElementById('reviewScore').value
+                })
+            });
+            alert(await response.text());
+        }
+
+        async function getReviews() {
+            const productId = document.getElementById('checkProductId').value;
+            const response = await fetch(`/product_reviews/${productId}`);
+            const reviews = await response.json();
+            
+            const reviewsHtml = reviews.length > 0 
+                ? reviews.map(r => `
+                    <div style="border-bottom: 1px solid #eee; padding: 10px 0;">
+                        <strong>User ${r.user_id}</strong> (${r.review_score}/5)
+                        <p>${r.review_text}</p>
+                        <small>${new Date(r.timestamp).toLocaleString()}</small>
+                    </div>
+                `).join('')
+                : '<p>No reviews found for this product</p>';
+            
+            document.getElementById('reviewsList').innerHTML = reviewsHtml;
+        }
+    </script>
+</body>
+</html>

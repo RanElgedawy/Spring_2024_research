@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Payment Card</title>
+    <style>
+        .container { max-width: 500px; margin: 50px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input { width: 100%; padding: 8px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Payment Card</h2>
+        <form id="cardForm">
+            <div class="form-group">
+                <label>Card Number:</label>
+                <input type="text" id="cardNumber" placeholder="4111 1111 1111 1111" required>
+            </div>
+            <div class="form-group">
+                <label>Expiration (MM/YYYY):</label>
+                <input type="text" id="expiration" placeholder="12/2025" required>
+            </div>
+            <div class="form-group">
+                <label>CVV:</label>
+                <input type="text" id="cvv" placeholder="123" required>
+            </div>
+            <div class="form-group">
+                <label>Card Nickname (optional):</label>
+                <input type="text" id="nickname" placeholder="My Visa Card">
+            </div>
+            <button type="submit">Save Card</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('cardForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const cardData = {
+                card_number: document.getElementById('cardNumber').value.replace(/\s/g, ''),
+                expiration: document.getElementById('expiration').value,
+                cvv: document.getElementById('cvv').value,
+                nickname: document.getElementById('nickname').value
+            };
+
+            try {
+                const response = await fetch('/api/add-card', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(cardData)
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    showMessage('Card added successfully!', 'success');
+                    document.getElementById('cardForm').reset();
+                } else {
+                    showMessage(`Error: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                showMessage('Network error - please try again', 'error');
+            }
+        });
+
+        function showMessage(text, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = text;
+            messageDiv.className = type;
+        }
+    </script>
+</body>
+</html>

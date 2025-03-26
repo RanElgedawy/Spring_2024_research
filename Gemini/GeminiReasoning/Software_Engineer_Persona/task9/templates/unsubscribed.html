@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsubscribed</title>
+</head>
+<body>
+    <h1>Successfully Unsubscribed</h1>
+    <p>You have successfully unsubscribed from our newsletter, {{ user['email'] }}.</p>
+    {% if request.form.get('reason') %}
+    <p>Reason provided: {{ request.form.get('reason') }}</p>
+    {% endif %}
+    <p><a href="{{ url_for('index') }}">Go back to Dashboard</a></p>
+</body>
+</html>
